@@ -1,0 +1,69 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+
+    .entry-content
+      .bg-texture-image.pt-px-lg-121.pt-md-7.pt-6.overflow-hidden
+        .container.position-relative
+          img.d-lg-block.d-none(src="assets/images/flowers/f100.png", alt="f100 flower image").position-absolute.top-px-lg-18.start-px-n-lg-25
+          img.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-lg-45.end-px-n-lg-35
+          .row
+            .col-lg-7.col-10
+              h5.font-letter-space.mb-px-8 Farming
+              h2.mb-px-18 Ketogenic diet dinner
+              p.lead Maecenas vitae cursus nisl, vitae rhoncus metus. Donec at iaculis augue, eget vehicula magna. Ut rutrum ac est non maximus. Mauris condimentum justo quis arcu tempor aliquet.
+            img.mt-px-lg-44.mt-px-md-64.mt-px-48(src="assets/images/single-project/spr1.jpg", alt="portfolio2").height-px-774.w-100.object-fit-cover
+            
+      //services section
+      .container.mt-px-lg-101.mt-px-md-80.mt-px-48
+        .row.gx-lg-5
+          .col-lg-7.mb-lg-0.mb-md-5.mb-4
+            h5.font-letter-space.mb-px-5 Project
+            h2.mb-px-26 Challenge
+            p.lead.mb-px-31 Morbi tristique ut sem a egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin congue ante felis, vel iaculis ipsum ornare ac. Ut a massa at dolor imperdiet viverra. Vivamus faucibus aliquet quam, id efficitur sapien placerat at. Nulla id pharetra massa. 
+            p.mb-0 Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus. Etiam vitae turpis vitae nibh molestie tincidunt ac vitae nunc. Donec varius ex sem, vestibulum faucibus odio tincidunt nec. Ut pulvinar odio libero, ac sodales dolor auctor id. 
+          .col-lg-2.offset-lg-3
+            h5.font-letter-space.mb-3 Services
+            ul.list-unstyled
+              li.mb-1
+                p.font-weight-bold - Farming
+              li.mb-1
+                p.font-weight-bold - Materials Sourcing
+              li.mb-4
+                p.font-weight-bold - Project Design
+
+            h5.font-letter-space.mb-3 Location
+            .pe-px-lg-30
+              p.font-weight-bold.mb-0 7 St. John’s Road BH55 3NG
+
+      // image section
+      .container.mt-px-lg-100.mt-px-md-80.mt-px-48
+        img(src="assets/images/single-project/spr2.jpg", alt="portfolio2").height-px-750.w-100.object-fit-cover
+
+      //gallery
+      .container.mt-px-lg-100.mt-px-md-80.mt-px-48
+        .slider-call.popup-gallery(data-flickity='{ "contain": true, "prevNextButtons": false }')
+          img.pe-lg-4.pe-md-3.pe-2.w-50(src='assets/images/single-project/spr3.jpg' alt='single-project2').height-px-440.object-fit-cover
+          img.px-lg-4.px-md-3.px-2.w-50(src='assets/images/single-project/spr4.jpg' alt='single-project3').height-px-440.object-fit-cover
+          img.px-lg-4.px-md-3.px-2.w-50(src='assets/images/single-project/spr5.jpg' alt='single-project4').height-px-440.object-fit-cover
+          img.ps-lg-4.ps-md-3.ps-2.w-50(src='assets/images/single-project/spr4.jpg' alt='single-project5').height-px-440.object-fit-cover
+      
+      // last section
+      .container.mt-px-lg-150.mt-px-md-120.mt-px-100.mb-px-lg-100.mb-px-md-80.mb-px-48
+        .row.gx-lg-5.pt-lg-4
+          .col-lg-6.mb-lg-0.mb-5
+            .position-relative
+              img(src="assets/images/single-project/spr6.jpg" alt="team image").height-px-600.w-100.object-fit-cover
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/1.png", alt="1 flower image").position-absolute.top-px-lg-10.start-px-n-lg-27
+
+          .col-lg-6.my-lg-auto
+            .ms-px-lg-32
+              h5.font-letter-space.mb-px-5 Project
+              h2.mb-px-26 Solution
+              p.mb-px-31 Morbi tristique ut sem a egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin congue ante felis, vel iaculis ipsum ornare ac. Ut a massa at dolor imperdiet viverra. Vivamus faucibus aliquet quam, id efficitur sapien placerat at. Nulla id pharetra massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+              p.mb-0 Etiam diam dui, sodales non vulputate vitae, lobortis non dui. Phasellus vulputate justo eget massa scelerisque, a molestie magna volutpat. Maecenas porta tellus sapien, id luctus neque lobortis ut. Aenean malesuada eleifend convallis. Morbi vel tempus mi. Pellentesque dictum fringilla sem.
+        
+      include includes/icons-nevigation

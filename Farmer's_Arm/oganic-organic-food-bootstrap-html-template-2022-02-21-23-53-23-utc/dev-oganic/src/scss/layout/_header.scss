@@ -1,0 +1,147 @@
+.site-header {
+  .navbar-collapse {
+    @include media-breakpoint-down(lg) {
+    margin-top: 20px;
+    }
+    @include media-breakpoint-down(lg) {
+      background-color: transparent;
+    }
+  }
+
+  .navbar {
+    @include media-breakpoint-up(lg) {
+      padding-top: 25px;
+      padding-bottom:25px;
+    }
+    @include media-breakpoint-down(lg) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .navbar-nav {
+      @include media-breakpoint-down(lg) {
+        background-color: $wheatfield;
+        padding: 20px;
+      }
+      margin-left: auto !important;
+    }
+
+    .nav-item {
+        
+      color: $dim-grey;
+    
+      @include media-breakpoint-down(lg)
+      {
+        padding-bottom:10px;
+        padding-top: 10px;
+      }
+      
+
+      &.active {
+        color: $parsley;
+      }
+
+      @include font-size(18px);
+      
+      margin-right: 9px;
+      margin-left: 9px;
+
+      .nav-link {
+        font-family: $font-family-base;
+        @include font-size(16px);
+        line-height: 25px;
+        color: $dim-grey;
+        font-weight: 500;
+        &:not(:last-child) {
+          margin-right: 0px;
+        }
+     
+        @include media-breakpoint-up(lg) {
+          position: relative;
+          &.active,
+          &:hover {
+            &::before {
+              content: "";
+              border-bottom: solid 2px $flame-pea;
+              width: calc(100% - 15px);
+              display: block;
+              position: absolute;
+              bottom: -5px;
+              z-index: 1;
+            }
+          }
+
+        }
+      }
+      .dropdown-menu {
+        @include font-size(16px);
+        font-weight: 800px;
+        padding:  8px 0px;
+        margin: 0px;
+        margin-top: 20px;
+        background-color: $wheatfield;
+        color: $parsley;
+        border: solid 1px #d7cbb7;
+        @include media-breakpoint-down(lg) {
+          padding: 0px 0px;
+          
+          background-color: $wheatfield;
+        }
+        .dropdown-item{
+          color: $matterhorn;
+          padding: 7px 32px;
+          font-weight: 500;
+          &:hover{
+            background-color: $black;
+            color: $white;
+          }
+        @include media-breakpoint-down(lg){
+     
+          padding: 13px 20px;
+          &.active{
+            color: $white;
+            background-color:$parsley;
+          }
+        }
+
+        }
+      }
+    }
+
+  }
+
+  .nav-modules {
+    li {
+      margin-left: 0px;
+    }
+  }
+
+  .navbar-toggler {
+    border-radius: 0px;
+    background-color: $white;
+
+  }
+
+}
+
+.btn-outline-black-header {
+  border: solid;
+  border-width: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-pills{
+  .nav-link{
+    padding: .75rem 2rem;
+    border-radius: 2rem;
+    &.active{
+      color: $white;
+    }
+  }
+}
+
+// Header modules
+@import "_header-modules.scss";

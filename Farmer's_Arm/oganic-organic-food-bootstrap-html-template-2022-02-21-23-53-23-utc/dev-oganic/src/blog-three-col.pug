@@ -1,0 +1,94 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      // head services
+      .small-bg-blog
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            { 
+              tag:"Read", 
+              title:"Blog Three Col",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/contact-us/c4.jpg",
+              alt:"blog-Three Col-image"
+            })
+
+      .container.my-lg-8.my-md-7.my-6
+        +blog(
+          'large-gutters gy-5',
+          'col-md-6 col-lg-4',
+          true,
+          {
+            image:'assets/images/blog/b1.jpg',
+            category:'Recource',
+            alt:'b1 image',
+            title:'Naturally grown green pumpkin',  
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b2.jpg',
+            category:'Recource',
+            alt:'b2 image',
+            title:'Fresh tomatoes harvesting',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b3.jpg',
+            category:'Recource',
+            alt:'b3 image',
+            title:'Fresh vegetables are important',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b4.jpg',
+            category:'Recource',
+            alt:'b4 image',
+            title:'Naturally grown green pumpkin',  
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b5.jpg',
+            category:'Recource',
+            alt:'b5 image',
+            title:'Fresh tomatoes harvesting',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b6.jpg',
+            category:'Recource',
+            alt:'b6 image',
+            title:'Fresh vegetables are important',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b7.jpg',
+            category:'Recource',
+            alt:'b7 image',
+            title:'Naturally grown green pumpkin',  
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b8.jpg',
+            category:'Recource',
+            alt:'b8 image',
+            title:'Fresh tomatoes harvesting',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b9.jpg',
+            category:'Recource',
+            alt:'b9 image',
+            title:'Fresh vegetables are important',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            }
+        )
+        .text-center.align-items-center.mt-5
+          a.btn.btn-parsley(href='#') Load More
+
+      include includes/icons-nevigation

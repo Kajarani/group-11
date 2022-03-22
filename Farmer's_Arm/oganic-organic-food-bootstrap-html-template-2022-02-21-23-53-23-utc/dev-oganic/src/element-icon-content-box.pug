@@ -1,0 +1,66 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Icon Content Box",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .container.mt-2
+              .row.gx-5
+                .col-lg-6
+                  .bg-parsley.px-4.py-5
+                    .mx-3
+                      i.mb-4.h1.display-4.fas.fa-charging-station.text-white
+                      .pt-3
+                        h4.mb-3.text-white Energy
+                      .pt-2.pb-3
+                        p.text-white Suspendisse in massa id velit ullamcorper laoreet ac bibendum velit. Pellentesque nec erat in mi molestie pharetra. Proin in purus nisi. Maecenas euismod auctor mi id ultrices. Praesent pharetra, sem ac dui pellentesque vestibulum congue,
+                      a.h6.btn-link1.border-2.border-bottom.shop-button-style(href='single-product.html') Shop now
+                .col-lg-6.mt-lg-0.mt-md-5.mt-4
+                  .bg-wheatfield.px-4.py-5
+                    .mx-3
+                      i.mb-4.h1.display-4.fas.fa-cog.text-parsley
+                      .pt-3
+                        h4.mb-3.text-flame-pea Operation Mnagement
+                      .pt-2.pb-3
+                        p Suspendisse in massa id velit ullamcorper laoreet ac bibendum velit. Pellentesque nec erat in mi molestie pharetra. Proin in purus nisi. Maecenas euismod auctor mi id ultrices. Praesent pharetra, sem ac dui pellentesque vestibulum congue,
+                      a.h6.btn-link.border-2.border-bottom.shop-button-style(href='single-product.html') Shop now
+                
+            hr.mt-5.mb-5
+            
+            .container
+              .row.text-center.gx-5
+                .col-md-6.mb-4
+                  .bg-wheatfield.px-5.py-5
+                    i.far.fa-heart.fa-2x.mb-3.text-parsley
+                    h5.mb-3.text-flame-pea Made With Love
+                    p.text-parsley Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+                .col-md-6.mb-4
+                  .bg-parsley.px-5.py-5
+                    .text-white
+                      i.fab.fa-angellist.fa-2x.mb-3
+                      h5.text-white.mb-3 Easy to Customize
+                      p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+
+      include includes/icons-nevigation
+              

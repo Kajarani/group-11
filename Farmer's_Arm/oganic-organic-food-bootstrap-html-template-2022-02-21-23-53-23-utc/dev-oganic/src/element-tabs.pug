@@ -1,0 +1,66 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Tables",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            nav
+              #nav-tab.nav.nav-tabs(role="tablist")
+                a#nav-Description-tab.nav-link.active.me-lg-6(data-bs-toggle="tab" href="#nav-Description" role="tab" aria-controls="nav-Description" aria-selected="true") Description
+                a#nav-Additional-information-tab.nav-link.me-lg-6(data-bs-toggle="tab" href="#nav-Additional-information" role="tab" aria-controls="nav-Additional-information" aria-selected="false") Additional information
+                a#nav-Reviews-tab.nav-link.me-lg-6(data-bs-toggle="tab" href="#nav-Reviews" role="tab" aria-controls="nav-Reviews" aria-selected="false") Reviews (1)
+              #nav-tabContent.tab-content
+                #nav-Description.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-Description-tab")
+                  div.pe-lg-6.pt-lg-5.pt-md-4.pt-4
+                    h5.font-family-base.font-weight-bold.mb-4 Description 
+                    p Aliquam a feugiat sem. Duis sit amet mollis nibh, vitae venenatis lectus. Praesent porta diam quis lacus commodo ornare. Nulla facilisi. Nam risus lacus, vulputate a nunc nec, bibendum aliquam dolor. Vestibulum finibus consequat orci at tincidunt. Pellentesque eu eros in sem ultricies interdum. In facilisis quam id tellus pretium fermentum.
+
+                #nav-Additional-information.tab-pane.fade(role="tabpanel" aria-labelledby="nav-Additional-information-tab")
+                  div.pe-lg-6.pt-lg-5.pt-md-4.pt-4
+                    h5.font-family-base.font-weight-bold.mb-4 Additional Information
+                    table.table.table-bordered
+                      tbody
+                        tr
+                          td.col-lg-2.text-center.h6 Size
+                          td.col-lg-10 Small , Medium , Large
+
+                #nav-Reviews.tab-pane.fade.font-family-base.font-weight-bold(role="tabpanel" aria-labelledby="nav-Reviews-tab")
+                  div.pe-lg-6.pt-lg-5.pt-md-4.pt-4
+                    h5.mb-4 1 Review From The Mango lounge chair
+
+                    p.mb-0 Add a Review
+                    p.mb-0 Your Rating
+                    i.fas.fa-star.text-parsley
+                    i.fas.fa-star.text-parsley
+                    i.fas.fa-star.text-parsley
+                    i.fas.fa-star.text-parsley
+                    i.fas.fa-star.text-parsley
+
+                    form#contact-form(method='post' action='assets/php/contact.php')
+                      .mb-4.pb-2
+                        textarea#form_message.form-control.footer-input.ps-px-15.border-dim-grey( name='message', placeholder='Your Review', rows='5', required)
+                      .mb-4 
+                        a.btn.btn-parsley(href='#') Submit
+
+      include includes/icons-nevigation

@@ -1,0 +1,347 @@
+@import "node_modules/bootstrap/scss/functions";
+
+// Websites languages direction
+$language-direction: ltr; // set value 'rtl' for right to left languages
+$language-opposite-direction: rtl; // set value 'ltr' for right to left languages
+$language-start-direction: left; // set value 'right' for right to left languages
+$language-end-direction: right; // set value 'left' for right to left languages
+$language-transform-direction: 1; // set value '-1' for right to left languages
+
+//Alert color
+$dark: #111;
+$blue: #341fff;
+$light-blue: #1da1f2;
+$dark-blue: #0000FF;
+$prime: #0000FF;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$primery:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+//using color
+$black: #000000;
+$grayphite: #EDEDED;
+$gray-500:#999999;
+
+// Template colors scheme
+$solitaire:#FEF6E9;
+$mid-gray:#555865;
+
+// Yaron template color scheme
+
+$parsley:#2A5631;         
+$bay-leaf:#7EA889;       
+$flame-pea:#BC5E49;      
+$white-smoke:#F4F4F4;     
+$dim-grey:#747474;        
+$matterhorn:#4C4C4C;     
+$grain-brown: #C8B6A1;   
+$wheatfield:#DFD7C3;      
+$saltpan: #EBF0DC;     
+$white-linen:#F2E8D8;     
+
+
+$primary: $parsley;
+$white: #ffffff;
+
+//Theme Colors
+$theme-colors: (
+  "primery":$primery,
+  "gray-500":$gray-500,
+  "grayphite": $grayphite,
+  "black": $black,
+  "solitaire": $solitaire,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark,
+  "primary":$primary,
+  "parsley":$parsley,
+  "white-linen":$white-linen,
+  "white-smoke":$white-smoke,
+  "white":$white,
+  "saltpan":$saltpan,
+  "dim-grey":$dim-grey,
+  "flame-pea":$flame-pea,
+  "wheatfield":$wheatfield,
+  "grain-brown":$grain-brown,
+  "matterhorn":$matterhorn,
+  "bay-leaf":$bay-leaf
+  );
+$accent-background-color: $white;
+//merge
+$colors: ();
+$colors: map-merge((
+  "primary":$primary,
+  "gray-500":$gray-500,
+  "grayphite": $grayphite,
+  "black": $black,
+  "solitaire": $solitaire,
+  "parsley":$parsley,
+  "white-linen":$white-linen,
+  "white-smoke":$white-smoke,
+  "saltpan":$saltpan,
+  "dim-grey":$dim-grey,
+  "wheatfield":$wheatfield,
+  "grain-brown":$grain-brown,
+  "matterhorn":$matterhorn,
+  "bay-leaf":$bay-leaf
+    ),
+    
+  $colors);
+  
+
+// Set
+// The
+// Customize
+// Options
+
+$enable-transitions: true; 
+$enable-responsive-font-sizes: true;
+$enable-negative-margins:true;
+// Spacing
+$spacer: 1rem;
+$spacers: (0: 0,
+  1: ($spacer * 0.25,
+  ),
+  //4px
+  2: ($spacer * 0.5,
+  ),
+  //8px
+  3: ($spacer * 1,
+  ),
+  //16px
+  4: ($spacer * 1.5,
+  ),
+  //24px
+  5: ($spacer * 3,
+  ),
+  //48px
+  6: ($spacer * 4,
+  ),
+  //64px
+  7: ($spacer * 5,
+  ),
+  //80px
+  8: ($spacer * 6.25,
+  ),
+  //100px
+  9: ($spacer * 7.5,
+  ),
+  //120px
+  10: ($spacer * 9.375,
+  ) //150px,
+);
+
+// This
+// stylelint
+// Body
+
+$body-color: $dim-grey;
+// Settings
+
+// Links
+$link-color: $parsley;
+$link-decoration: none;
+$link-hover-color: $dim-grey;
+
+// Paragraphs
+//
+// Style
+// Grid containers
+
+$small-screen: 540px;
+$medium-screen: 720px;
+$large-screen: 960px;
+$extra-large-screen: 1320px;
+
+$container-max-widths: (sm: $small-screen,
+  md: $medium-screen,
+  lg: $large-screen,
+  xl: $extra-large-screen,
+);
+
+// adapting
+// Grid
+//
+// Define
+// Grid
+//
+// Set
+// Components
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace;
+$font-family-base: 'Roboto';
+$font-weight-normal: 400;
+$line-height-base:   1.7;
+
+$headings-font-family: 'Playfair Display';
+$headings-font-weight: 700;
+$headings-color:     $parsley;
+$headings-line-height: 1.4;
+
+$lead-font-size: 1.25rem;
+$lead-font-weight: 400px;
+
+// Assumes
+// Tables
+//
+// Customizes
+// Buttons
+//
+// Shared
+// Buttons + Forms
+
+$input-btn-font-family: $font-family-base;
+$btn-font-weight: 500px;
+ 
+// Forms
+$input-border-color: #e4e4e4;
+$input-focus-bg: $white-smoke;
+$input-box-shadow: 0;
+$input-bg: transparent;
+$input-color: $parsley;
+$input-border-radius: 0;
+$input-btn-padding-y:0.95rem;
+$input-btn-padding-x: 2.2rem;
+$input-padding-x: 1.5rem;
+$input-padding-y: 1rem;
+$btn-border-radius: 5px;
+$btn-active-box-shadow: 0;
+$btn-border-radius: 3rem;
+$btn-link-hover-color: $flame-pea;
+$btn-link-color:  $parsley;
+
+$border-color: $black;
+$btn-border-width:  3px;
+$btn-padding-y: 11px;
+$btn-padding-x: 37px;
+$btn-font-size: 16px;
+$btn-font-family: $font-family-base;
+$btn-font-weight: 700;
+$btn-line-height: 28px;
+$input-border-width: 2px;
+$input-focus-border-color: #e4e4e4;
+$input-focus-box-shadow: 0;
+$input-height: 6px;
+$input-btn-focus-width: 0rem;
+// Extra
+// In
+
+// Used
+// For
+// Form
+// stylelint
+// Z
+// Warning
+// of
+// Navs
+$nav-link-color: $black;
+$nav-link-font-weight: 500px;
+$nav-link-padding-y: 0;
+$nav-link-padding-x: 0.3rem;
+$nav-tabs-link-active-bg: none;
+$nav-tabs-link-active-color: $flame-pea;
+$nav-link-color: $parsley;
+$nav-tabs-link-active-border-color: $flame-pea;
+
+// Navbar
+$navbar-light-color:  $black;
+$nav-link-font-size: 16px;
+$navbar-light-active-color: $parsley;
+
+// Compute
+// Dropdowns
+$dropdown-font-size: 18;
+$dropdown-link-hover-bg: $black;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $white;
+$dropdown-link-active-color:  $white;
+$dropdown-link-active-bg:  $black;
+$dropdown-box-shadow: none;
+$dropdown-item-padding-x: 2.5rem;
+$dropdown-item-padding-y: .75rem;
+$dropdown-bg: $black;
+$dropdown-border-width:0;
+$dropdown-border-radius:0;
+$dropdown-min-width:auto;
+// Pagination
+
+$pagination-padding-x: 0.93rem;
+
+
+// Jumbotron
+// Cards
+// Tooltips
+// Form
+// Popovers
+// Toasts
+// Badges
+// Use
+// customizing
+// Modals
+$modal-content-color:$black;
+// Padding
+// Keep
+// Alerts
+// Define
+$border-width: 1px;
+// Progress
+// List
+// Image
+// Figures
+// Breadcrumbs
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+
+$breadcrumb-divider: quote(">");
+
+// Carousel
+// Define
+// Spinners
+// Close
+// Code
+// Utilities
+//Printing
+
+$caret-width: 0.21em;
+
+@import "node_modules/bootstrap/scss/variables";

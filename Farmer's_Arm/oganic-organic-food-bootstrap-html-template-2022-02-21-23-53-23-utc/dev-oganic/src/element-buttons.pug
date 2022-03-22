@@ -1,0 +1,47 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+  .entry-content
+    //- Page title
+    .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Buttons",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+    .container
+      .row.large-gutters
+        .col-lg-3.mb-7
+          //- Elements nav
+          include includes/elements-nav
+        .col-lg-9
+          .px-5.py-5
+            .row  
+              .col-lg-4
+                a.btn.btn-outline-parsley(href="") VIEW MORE
+              .col-lg-4
+                a.btn.btn-saltpan(href="") SUBSCRIBE
+              .col-lg-4
+                a.btn.btn-parsley(href="") READ MORE
+            .row.mt-lg-5.mt-md-4.mt-4  
+              .col-lg-4
+                a.btn.btn-parsley(href="") CONTACT US
+              .col-lg-4
+                a.btn.btn-white-smoke(href="") SUBSCRIBE
+              .col-lg-4
+                a.btn.btn-outline-saltpan.text-black(href="") CONTACT US
+            .row.mt-lg-5.mt-md-4.mt-4  
+              .col-lg-4
+                a.btn.btn-outline-white-smoke.text-parsley(href="") READ MORE
+
+      include includes/icons-nevigation

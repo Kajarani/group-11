@@ -1,0 +1,120 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //title
+      .small-bg-testimonials
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"About our", 
+              title:"Team",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/testimonials/tst1.jpg",
+              alt:"testimonials-hero-image"
+            })
+
+      //head picture
+      .container.mt-lg-8.mt-md-6.mt-5
+        .row
+          .container.mt-lg-2
+            .row.gx-lg-0
+              .col-lg-5
+                .position-relative
+                  img(src="assets/images/testimonials/tst2.jpg" alt="testimonials1").height-px-550.w-100.object-fit-cover
+                  img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/1.png", alt="1 flower image").position-absolute.top-px-lg-10.start-px-n-lg-28
+
+              .col-lg-7
+                .bg-texture-image.pt-px-lg-114.pb-px-lg-108.ps-px-lg-80.pe-px-lg-60.pt-px-md-80.pb-px-md-80.ps-px-md-60.pe-px-md-60.pt-px-40.pb-px-40.ps-px-30.pe-px-30
+                  i.mb-px-31.fas.fa-quote-left.text-grain-brown.display-5
+                  h4.testimonials-line-height.fst-italic.mb-px-31 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  h5.text-flame-pea.base-font-family.mb-0 Michael D. Wilson - CEO of Tozee
+
+      .container.mt-lg-6.mt-5
+        .row
+          .container.mt-lg-2
+            .row.gx-lg-0
+              .col-lg-5.order-lg-1
+                .position-relative
+                  img(src="assets/images/testimonials/tst3.jpg" alt="testimonials2").height-px-550.w-100.object-fit-cover
+                  img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f18.png", alt="f18 flower image").position-absolute.top-px-lg-0.end-px-n-lg-45
+              .col-lg-7
+                .bg-texture-image.pt-px-lg-114.pb-px-lg-108.ps-px-lg-80.pe-px-lg-60.pt-px-md-80.pb-px-md-80.ps-px-md-60.pe-px-md-60.pt-px-40.pb-px-40.ps-px-30.pe-px-30
+                  i.mb-px-31.fas.fa-quote-left.text-grain-brown.display-5
+                  h4.testimonials-line-height.fst-italic.mb-px-31 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  h5.text-flame-pea.base-font-family.mb-0 Michael D. Wilson - CEO of Manan
+
+      .container.mt-lg-6.mt-5
+        .row
+          .container.mt-lg-2
+            .row.gx-lg-0
+              .col-lg-5
+                .position-relative
+                  img(src="assets/images/testimonials/tst4.jpg" alt="testimonials3").height-px-550.w-100.object-fit-cover
+                  img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-lg-8.start-px-n-lg-43
+
+              .col-lg-7
+                .bg-texture-image.pt-px-lg-114.pb-px-lg-108.ps-px-lg-80.pe-px-lg-60.pt-px-md-80.pb-px-md-80.ps-px-md-60.pe-px-md-60.pt-px-40.pb-px-40.ps-px-30.pe-px-30
+                  i.mb-px-31.fas.fa-quote-left.text-grain-brown.display-5
+                  h4.testimonials-line-height.fst-italic.mb-px-31 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  h5.text-flame-pea.base-font-family.mb-0 Michael D. Wilson - CEO of Sanat
+
+      // carousel
+      .container.px-0.mb-px-lg-104.mt-px-lg-116.mb-px-md-80.mt-px-md-70.mb-px-60.mt-px-50
+        .text-center.mb-px-27
+          i.fas.fa-quote-left.text-grain-brown.icon-left-quote-45.mb-px-30
+        #carouselExampleInterval.carousel.slide(data-bs-ride='carousel')
+          .carousel-inner
+            .carousel-item.active(data-bs-interval='10000')
+              div.px-lg-10.px-md-6.px-5
+                div.mx-lg-7
+                  p.lead.text-center Mauris faucibus ante quis arcu pellentesque congue. In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor.
+              .row.pt-4
+                .col-lg-4.col-md-6.col-12.offset-md-3.offset-lg-4.text-center
+                  .row
+                    .col-3.offset-3
+                      img.mb-3.rounded-circle(src="assets/images/team/t7.jpg", alt="t7 image").height-px-200.object-fit-cover.w-100
+                    .col-6
+                      .text-start.ms-px-lg-2
+                        h5.mb-px-12 Mary Gillis
+                        h5.font-letter-space Brooklyn, NY
+            .carousel-item(data-bs-interval='10000')
+              div.px-lg-10.px-md-6.px-5
+                div.mx-lg-5
+                  p.lead.text-center Mauris faucibus ante quis arcu pellentesque congue. In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor.
+              .row.pt-4
+                .col-lg-4.col-md-6.col-12.offset-md-3.offset-lg-4.text-center
+                  .row
+                    .col-3.offset-3
+                      img.mb-3.rounded-circle(src="assets/images/team/t6.jpg", alt="t6 image").height-px-200.object-fit-cover.w-100
+                    .col-6
+                      .text-start.ms-px-lg-2
+                        h5.mb-px-12 Jhon Doe
+                        h5.font-letter-space CEO
+            .carousel-item
+              div.px-lg-10.px-md-6.px-5
+                div.mx-lg-5
+                  p.lead.text-center Mauris faucibus ante quis arcu pellentesque congue. In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor.
+              .row.pt-4
+                .col-lg-4.col-md-6.col-12.offset-md-3.offset-lg-4.text-center
+                  .row
+                    .col-3.offset-3
+                      img.mb-3.rounded-circle(src="assets/images/team/t2.jpg", alt="t2 image").height-px-200.object-fit-cover.w-100
+                    .col-6
+                      .text-start.ms-px-lg-2
+                        h5.mb-px-12 James Smith
+                        h5.font-letter-space Manager
+
+          a.carousel-control-prev(href='#carouselExampleInterval' role='button' data-bs-slide='prev')
+            span.carousel-control-prev-icon.text-black(aria-hidden='true')
+            span.visually-hidden Previous
+          a.carousel-control-next(href='#carouselExampleInterval' role='button' data-bs-slide='next')
+            span.carousel-control-next-icon.text-black(aria-hidden='true')
+            span.visually-hidden Next
+          
+      include includes/icons-nevigation

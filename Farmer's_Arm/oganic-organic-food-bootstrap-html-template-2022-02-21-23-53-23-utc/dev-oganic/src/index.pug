@@ -1,0 +1,406 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      // head title
+      .bg-texture-image.pt-px-lg-120.pb-px-lg-120.pt-px-md-80.pb-px-md-70.pt-px-30.pb-px-60.overflow-hidden
+        img.ms-px-n-lg-45.d-lg-block.d-none(src="assets/images/flowers/f100.png", alt="hero flower image").position-absolute.top-px-lg-23.start-px-lg-0
+        .container
+          .row.gx-lg-5
+            .col-lg-5.order-lg-1.mb-lg-0.mb-px-md-40.mb-px-30
+              .position-relative
+                #carouselExampleControls.carousel.slide.z-index-back.me-px-lg-0.me-px-md-60(data-bs-ride='carousel')
+                  .carousel-inner
+                    .carousel-item.pb-px-lg-50.active
+                      .position-relative
+                        img.d-block.w-100(src="assets/images/shop/s3.jpg", alt='slider one image').height-px-520.object-fit-cover.w-100
+                        .position-absolute.top-50.end-0
+                          .me-px-50.mt-px-lg-145.mt-px-md-151
+                            .bg-white.mb-px-n-50.border-radius-home.ps-px-30.pe-px-30.pt-px-28.pb-px-32
+                              h5 Grilled squids  
+                              .pt-px-4
+                                h6.price $9.99
+                              div.mt-px-14
+                                a.h6.btn-link.border-2.border-bottom.shop-button-style(href='single-product.html') Add to cart
+                    .carousel-item.pb-px-lg-50
+                      .position-relative
+                        img.d-block.w-100(src="assets/images/shop/s5.jpg", alt='slider two image').height-px-520.object-fit-cover.w-100
+                        .position-absolute.top-50.end-0
+                          .me-px-50.mt-px-lg-145.mt-px-md-151
+                            .bg-white.border-radius-home.ps-px-30.pe-px-30.pt-px-28.pb-px-32
+                              h5 Corn Mixed Salad  
+                              .pt-px-4
+                                h6.price $10.99
+                              div.mt-px-14
+                                a.h6.btn-link.border-2.border-bottom.shop-button-style(href='single-product.html') Add to cart
+                    .carousel-item.pb-px-lg-50
+                      .position-relative
+                        img.d-block.w-100(src="assets/images/shop/s6.jpg", alt='slider three image').height-px-520.object-fit-cover.w-100
+                        .position-absolute.top-50.end-0
+                          .me-px-50.mt-px-lg-145.mt-px-md-151
+                            .bg-white.border-radius-home.ps-px-30.pe-px-30.pt-px-28.pb-px-32
+                              h5 Ketolegic Diet  
+                              .pt-px-4
+                                h6.price $15.99
+                              div.mt-px-14
+                                a.h6.btn-link.border-2.border-bottom.shop-button-style(href='single-product.html') Add to cart
+                  a.carousel-control-prev(href='#carouselExampleControls' role='button' data-bs-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.visually-hidden Previous
+                  a.carousel-control-next(href='#carouselExampleControls' role='button' data-bs-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.visually-hidden Next
+                
+                .position-absolute.top-px-md-0.start-lg-20.end-px-n-md-5
+                  img.mt-px-n-lg-120.mt-px-n-md-70.ms-px-md-150.ps-px-lg-135.ps-px-md-151.d-none.d-lg-block(src="assets/images/flowers/circle.png", alt="slider image")
+
+            .col-lg-7.my-auto.pe-px-lg-150
+              .me-px-lg-100.me-px-md-60
+                h5.font-letter-space.mb-px-8 Go Organic
+                h1.hero-font.mb-px-28 It’s always better when it’s natural. Eat organic & be healthy
+                ul.list-unstyled
+                  li.mb-px-12
+                    i.fas.fa-check.text-parsley.me-px-9
+                    |  Donec feugiat ipsum sed enim ullamcorper
+                  li.mb-px-12 
+                    i.fas.fa-check.text-parsley.me-px-9
+                    |  Nullam fermentum vel odio ac congue
+                  li.mb-px-12
+                    i.fas.fa-check.text-parsley.me-px-9
+                    |  Praesent tincidunt ante auctor tellus dictum
+                  li.mb-px-37
+                    i.fas.fa-check.text-parsley.me-px-9
+                    |  Suspendisse posuere vel massa quis sodales
+
+                a.btn.btn-parsley(href="page-contact.html") Get started
+
+      // logo section
+      .container.mt-px-lg-120.mb-px-lg-120.mt-px-md-80.mb-px-md-80.mt-px-60.mb-px-60
+        .row.gx-lg-5
+          .col-lg-6.mb-lg-0.mb-px-30
+            .position-relative
+              img.z-index-3(src="assets/images/home/h1.jpg", alt="home-1-image").height-px-780.w-100.object-fit-cover
+              img.z-index-flower(src="assets/images/flowers/f13.png", alt="flower-13-image").position-absolute.top-px-9.start-0.translate-middle
+          .col-lg-6.my-auto
+            .ms-px-lg-32
+              h5.font-letter-space.mb-px-8 Go Organic
+              h2.mb-px-17 It’s always better when it’s natural.
+              .pe-px-lg-40.pb-px-36
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque, urna libero lacinia nisi, vitae viverra augue turpis eget dui. Suspendisse pellentesque iaculis venenatis. 
+
+              .pe-px-lg-60
+                .row.gx-lg-0.mb-px-md-45.mb-px-30
+                  .col-3
+                    img(src="assets/images/logo4.png", alt="logo-4")
+                  .col-9
+                    .ms-px-n-5
+                      h5.mb-px-12 Eat clean and green
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque.
+                .row.gx-lg-0.mb-px-md-45.mb-px-30
+                  .col-3
+                    img(src="assets/images/logo5.png", alt="logo-4")
+                  .col-9
+                    .ms-px-n-5
+                      h5.mb-px-12 Grown by Nature
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque.
+                .row.gx-lg-0
+                  .col-3
+                    img(src="assets/images/logo6.png", alt="logo-4")
+                  .col-9
+                    .ms-px-n-5
+                      h5.mb-px-12 Eat good, Feel good
+                      p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque.
+
+      // image merge section
+      .bg-texture-image.overflow-hidden.pt-px-lg-120.pb-px-16.pt-px-md-80.pt-px-60
+        .container.pb-px-lg-150.pb-px-md-60.pb-px-50
+          .row.gx-lg-5
+            .col-lg-6
+              .position-relative
+                .me-px-lg-151.me-px-md-150
+                  .pe-px-lg-30.pe-px-md-70
+                    img.mb-md-0.mb-px-40(src="assets/images/home/h2.jpg", alt="home image-2").height-px-550.object-fit-cover.w-100
+                    img.d-md-block.d-none(src="assets/images/flowers/1.png", alt="one flower image").position-absolute.top-px-lg-5.start-px-n-lg-28.end-px-n-lg-0.top-px-n-md-15.end-px-n-md-10
+
+                .position-md-absolute.top-px-lg-0.end-px-lg-0.top-px-md-15
+                  .ms-px-md-151.mt-px-lg-150.mt-px-md-120
+                    .ps-px-lg-85.pt-px-lg-70.ps-px-md-70
+                      img(src="assets/images/home/h3.jpg", alt="home image-3").height-px-460.object-fit-cover.w-100
+            .col-lg-6.my-auto
+              .ms-px-lg-32.mt-px-lg-150.mt-px-md-150.mt-px-30
+                i.fas.fa-quote-left.text-grain-brown.icon-left-quote.mb-px-30
+                h2.fst-italic.mb-px-30 There is an enormous amount of interest in raw and organic foods, but more recently it is superfoods. People want to know more about chia seeds, mocha, raw chocolate and cocoa, and what they can do for you.
+                h5.base-font-family.text-flame-pea - David Wolfe
+
+        //middle section
+        .container.pt-px-lg-80
+          .row.gx-lg-5
+            .col-lg-6.order-lg-1
+              .position-relative
+                img.mb-lg-0.mb-px-30.z-index-2(src="assets/images/home/h4.jpg", alt="home image-4").height-px-456.object-fit-cover.w-100
+                img.d-lg-block.d-none.z-index-3(src="assets/images/flowers/f18.png", alt="f18 flower image").position-absolute.top-px-n-lg-16.end-px-n-lg-45
+              
+            .col-lg-6.my-auto
+              h5.font-letter-space.mb-px-8 Go Organic
+              h2.mb-px-17 It’s always better when it’s natural.
+              .pe-px-lg-90.pb-px-6
+                p Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.
+
+              a.btn.btn-parsley(href="page-about-us.html") Get started
+
+        // partners
+        .container.pt-px-lg-150.pb-px-lg-150.pt-px-md-80.pb-px-md-80.pt-px-60.pb-px-60
+          .row.gx-lg-5.pt-px-lg-15.pb-px-lg-29
+            .col-lg-4.mb-lg-0.mb-px-md-40.mb-px-30
+              .text-center.position-relative
+                img.mb-px-27.z-index-4(src="assets/images/logo7.png", alt="logo4")
+                h5.mb-px-18 Farm raised food
+                .px-2
+                  p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+                img.d-lg-block.d-none(src="assets/images/flowers/f10.png", alt="f10 flower image").position-absolute.top-px-n-lg-10.start-px-n-lg-90
+            .col-lg-4.mb-lg-0.mb-px-md-40.mb-px-30              
+              .text-center
+                img.mb-px-27(src="assets/images/logo8.png", alt="logo4")
+                h5.mb-px-18 100% organic food
+                .px-2
+                  p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+            .col-lg-4
+              .text-center
+                img.mb-px-27(src="assets/images/logo9.png", alt="logo4")
+                h5.mb-px-18 Grown naturally
+                .px-2
+                  p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+                
+      // shop
+      .overflow-hidden
+        .container.mt-px-lg-120.mb-px-lg-120.mt-px-md-80.mb-px-md-80.mt-px-60.mb-px-60
+          .position-relative 
+            .text-center
+              h3.mb-px-md-52.mb-px-40 Organic Meals
+            +shop(
+              'card-post-style',
+              'col-lg-4 mb-lg-0 mb-px-md-50 mb-px-40',
+              false,
+              {
+              image:'assets/images/shop/s9.jpg',
+              alt:'s9 image',
+              title:'Taco with meat and vegetables',
+              price:'15.99'
+              },
+              {
+              image:'assets/images/shop/s8.jpg',
+              alt:'s8 image',
+              title:'Sala dwith Grilled squids ',
+              price:'20.99'
+              },
+              {
+              image:'assets/images/shop/s7.jpg',
+              alt:'s7 image',
+              title:'Chicken burrito',
+              price:'21.99'
+              },
+              {
+              image:'assets/images/shop/s6.jpg',
+              alt:'s6 image',
+              title:'Baked salmon fish',
+              price:'15.99'
+              },
+              {
+              image:'assets/images/shop/s5.jpg',
+              alt:'s5 image',
+              title:'Organic Wrap',
+              price:'60.99'
+              },
+              {
+              image:'assets/images/shop/s4.jpg',
+              alt:'s4 image',
+              title:'Mexican black bean corn',
+              price:'10.99'
+              }) 
+            .text-center.mt-px-lg-80
+              a.btn.btn-parsley(href="shop.html") See more
+            img.d-lg-block.d-none(src="assets/images/flowers/f6.png", alt="f6 flower image").position-absolute.bottom-px-n-lg-8.start-px-n-lg-41
+            img.d-lg-block.d-none(src="assets/images/flowers/f5.png", alt="f5 flower image").position-absolute.top-px-n-lg-0.end-px-n-lg-37
+            
+
+      .bg-texture-image.overflow-hidden.pt-px-lg-120.pb-px-lg-120.pt-px-md-80.pb-px-md-70.pt-px-60.pb-px-50
+        .container.pb-px-lg-66
+          .row.gx-lg-5
+            .col-lg-6.order-lg-1
+              .ms-px-lg-32
+                .position-relative
+                  .ms-px-lg-151.me-lg-0.me-px-md-150
+                    .ps-px-lg-30.pe-lg-0.pe-px-md-70
+                      img.mb-md-0.mb-px-20(src="assets/images/home/h5.jpg", alt="home image-5").height-px-550.object-fit-cover.w-100
+                      img.d-md-block.d-none(src="assets/images/flowers/f8.png", alt="f8 flower image").position-absolute.top-px-n-lg-0.end-px-n-lg-44.top-px-n-md-15.end-px-n-md-10
+                  .position-md-absolute.top-px-lg-0.end-px-lg-0.top-px-md-15
+                    .me-px-lg-101.ms-px-md-150.ms-lg-0.mt-px-lg-150.mt-px-md-120
+                      .pe-px-lg-85.ps-lg-0.ps-px-md-70.pt-px-lg-70
+                        img(src="assets/images/home/h6.jpg", alt="home image-6").height-px-460.object-fit-cover.w-100
+                  
+                  
+            .col-lg-6.my-auto
+              .position-relative
+                .mt-px-lg-84.mt-px-md-150.mt-px-30
+                  h5.font-letter-space.mb-px-8 Go Organic
+                  h2.mb-px-17 It’s always better when it’s natural.
+                  .pe-px-lg-90.pb-px-6
+                    p Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                  .row.mt-px-lg-30.mt-px-20
+                    .col-md-6.mb-md-0.mb-3
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                    .col-md-6
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                  .row.mt-px-lg-35.mt-px-20
+                    .col-md-6.mb-md-0.mb-3
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                    .col-md-6
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                img.d-lg-block.d-none(src="assets/images/flowers/f9.png", alt="f9 flower image").position-absolute.top-px-40.start-px-n-77
+              
+
+      // carousel
+      .overflow-hidden
+        .container.px-0.mb-px-lg-104.mt-px-lg-116.mb-px-md-80.mt-px-md-70.mb-px-60.mt-px-60
+          .text-center.mb-px-lg-27.mb-px-20
+            i.fas.fa-quote-left.text-grain-brown.icon-left-quote-45.mb-px-30
+          .position-relative
+            #carouselExampleInterval.carousel.slide(data-bs-ride='carousel')
+              .carousel-inner
+                .carousel-item.active(data-bs-interval='10000')
+                  div.px-lg-10.px-md-6.px-3
+                    div.mx-lg-7
+                      p.lead.text-center Mauris faucibus ante quis arcu pellentesque congue. In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor.
+                  .row.pt-4
+                    .col-lg-4.col-md-6.col-12.offset-md-3.offset-lg-4.text-center
+                      .row
+                        .col-3.offset-3
+                          img.mb-3.rounded-circle(src="assets/images/team/t7.jpg", alt="t7 image").height-px-200.object-fit-cover.w-100
+                        .col-6
+                          .text-start.ms-px-lg-2
+                            h5.mb-px-12 Mary Gillis
+                            h5.font-letter-space Brooklyn, NY
+                .carousel-item(data-bs-interval='10000')
+                  div.px-lg-10.px-md-6.px-3
+                    div.mx-lg-5
+                      p.lead.text-center Mauris faucibus ante quis arcu pellentesque congue. In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor.
+                  .row.pt-4
+                    .col-lg-4.col-md-6.col-12.offset-md-3.offset-lg-4.text-center
+                      .row
+                        .col-3.offset-3
+                          img.mb-3.rounded-circle(src="assets/images/team/t6.jpg", alt="t6 image").height-px-200.object-fit-cover.w-100
+                        .col-6
+                          .text-start.ms-px-lg-2
+                            h5.mb-px-12 Jhon Doe
+                            h5.font-letter-space CEO
+                .carousel-item
+                  div.px-lg-10.px-md-6.px-3
+                    div.mx-lg-5
+                      p.lead.text-center Mauris faucibus ante quis arcu pellentesque congue. In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor.
+                  .row.pt-4
+                    .col-lg-4.col-md-6.col-12.offset-md-3.offset-lg-4.text-center
+                      .row
+                        .col-3.offset-3
+                          img.mb-3.rounded-circle(src="assets/images/team/t2.jpg", alt="t2 image").height-px-200.object-fit-cover.w-100
+                        .col-6
+                          .text-start.ms-px-lg-2
+                            h5.mb-px-12 James Smith
+                            h5.font-letter-space Manager
+
+              a.carousel-control-prev(href='#carouselExampleInterval' role='button' data-bs-slide='prev')
+                span.carousel-control-prev-icon.text-black(aria-hidden='true')
+                span.visually-hidden Previous
+              a.carousel-control-next(href='#carouselExampleInterval' role='button' data-bs-slide='next')
+                span.carousel-control-next-icon.text-black(aria-hidden='true')
+                span.visually-hidden Next
+            img.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-n-60.end-px-n-37
+
+
+
+      // icon box
+      .container
+        .row.gx-md-5
+          .col-lg-4.mb-lg-0.mb-px-md-48.mb-px-40
+            img(src="assets/images/home/h7.jpg", alt="home image-7").height-px-408.w-100.object-fit-cover
+          .col-lg-4.col-md-6.mb-md-0.mb-px-40
+            .bg-saltpan.pt-px-lg-81.pb-px-lg-83.ps-px-lg-40.pe-px-lg-40.pt-px-40.pb-px-40.ps-px-40.pe-px-40
+              .row.mb-px-5
+                .col-lg-1.col-2
+                  i.fas.fa-pepper-hot.text-flame-pea.icon-left-quote-34
+                .col-lg-11.col-10
+                  .text-start.ms-px-lg-18  
+                    h3.h3-md Our Menu
+              p.mb-px-28 Donec fermentum sodales lacus ut mollis. Proin posuere urna eu quam pellentesque, vel sagittis ipsum pulvinar. Nunc sed tellus. Nullam dapibus et turpis ut ultricies.
+              a.btn.btn-parsley(href="shop.html") View more
+          .col-lg-4.col-md-6
+            .bg-texture-image.pt-px-lg-81.pb-px-lg-83.ps-px-lg-40.pe-px-lg-40.pt-px-40.pb-px-40.ps-px-40.pe-px-40
+              .row.mb-px-5
+                .col-lg-1.col-2
+                  i.fab.fa-uber.text-flame-pea.icon-left-quote-34
+                .col-lg-11.col-10
+                  .text-start.ms-px-lg-18  
+                    h3.h3-md 24 hours delivery
+              p.mb-px-28 Donec fermentum sodales lacus ut mollis. Proin posuere urna eu quam pellentesque, vel sagittis ipsum pulvinar. Nunc sed tellus. Nullam dapibus et turpis ut ultricies.
+              a.btn.btn-parsley(href="single-product.html") Order now
+      // blogs
+      .container.mt-px-lg-112.mb-px-lg-120.mt-px-md-80.mb-px-md-70.mt-px-60.mb-px-50
+        .text-center.mb-px-lg-62.mb-px-lg-52.mb-px-40
+          h3 Recent News
+        +blog(
+          'card-post-style',
+          'col-lg-4 mb-lg-0 mb-md-5 mb-4',
+          false,
+          {
+          image:'assets/images/blog/b1.jpg',
+          category:'Ingradiants',
+          alt:'b1 image',
+          title:'Naturally grown green pumpkin',  
+          content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+          },
+          {
+          image:'assets/images/blog/b2.jpg',
+          category:'Vegitabe',
+          alt:'b2 image',
+          title:'Fresh tomatoes harvesting ',
+          content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+          },
+          {
+          image:'assets/images/blog/b3.jpg',
+          category:'Natural',
+          alt:'b3 image',
+          title:'Fresh vegetables are important',
+          content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+          }
+          )
+        .text-center.mt-lg-5.mt-2
+          a.btn.btn-parsley(href="blog.html") See more
+      .container.mb-lg-8.mb-md-6.mb-6
+
+        .text-center.mb-px-lg-41.mb-4
+          h3.mb-px-10 Follow us
+          h5.font-letter-space @oganic
+        #instafeed.row.g-5
+
+      // last section Need a Expert
+      .container.mt-px-lg-120.mb-px-lg-120.mt-px-md-80.mb-px-md-80.mt-px-60.mb-px-60
+        .row.gx-lg-5
+          .col-lg-5
+            .position-relative
+              img(src="assets/images/home/h8.jpg", alt="image-h8").height-px-408.object-fit-cover.w-100
+              img.d-lg-block.d-none(src="assets/images/flowers/f9.png", alt="hero flower image").position-absolute.top-px-0.start-px-n-93
+          .col-lg-7
+            .bg-texture-image.px-lg-7.pt-px-lg-80.pb-px-lg-81.px-md-5.pt-px-md-50.pb-px-md-51.px-4.pt-px-40.pb-px-41
+              h5.font-letter-space.mb-px-8 Need a expert advice?
+              h2.mb-px-17 Ask a Nutritionist Online
+              .pe-px-lg-0.pb-px-6
+                p Donec euismod posuere rhoncus. Donec vestibulum venenatis nunc, quis mollis lectus fermentum vel. Curabitur mollis dolor sapien, ut varius arcu ullamcorper vitae rci varius natoque penatibus magnis.
+
+              a.btn.btn-parsley(href="page-about-us.html") Contact us
+
+      include includes/icons-nevigation

@@ -1,0 +1,92 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      // head services
+      .small-bg-blog
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            { 
+              tag:"Read", 
+              title:"Blog Two Col Right Sidebar",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/contact-us/c4.jpg",
+              alt:"blog-Two-Col-Right-Sidebar-image"
+            })
+
+      .container.mt-lg-8.mt-md-7.mt-6
+        .row.large-gutters
+          .col-lg-8.mb-7
+            +blog(
+              '',
+              'col-lg-6',
+                true,
+                {
+              image:'assets/images/blog/b1.jpg',
+              category:'Recource',
+              alt:'b1 image',
+              title:'Naturally grown green pumpkin',  
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              },
+              {
+              image:'assets/images/blog/b2.jpg',
+              category:'Recource',
+              alt:'b2 image',
+              title:'Fresh tomatoes harvesting',
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              },
+              {
+              image:'assets/images/blog/b3.jpg',
+              category:'Recource',
+              alt:'b3 image',
+              title:'Fresh vegetables are important',
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              },
+              {
+              image:'assets/images/blog/b4.jpg',
+              category:'Recource',
+              alt:'b4 image',
+              title:'Naturally grown green pumpkin',  
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              },
+              {
+              image:'assets/images/blog/b5.jpg',
+              category:'Recource',
+              alt:'b5 image',
+              title:'Fresh tomatoes harvesting',
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              },
+              {
+              image:'assets/images/blog/b6.jpg',
+              category:'Recource',
+              alt:'b6 image',
+              title:'Fresh vegetables are important',
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              },
+              {
+              image:'assets/images/blog/b7.jpg',
+              category:'Recource',
+              alt:'b7 image',
+              title:'Naturally grown green pumpkin',  
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              },
+              {
+              image:'assets/images/blog/b8.jpg',
+              category:'Recource',
+              alt:'b8 image',
+              title:'Fresh tomatoes harvesting',
+              content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+              }
+            )
+            .text-center.align-items-center.mt-5
+              a.btn.btn-parsley(href='#') Load More
+          .col-lg-4.mb-7
+            //- Sidebar
+            include includes/sidebar
+
+      include includes/icons-nevigation

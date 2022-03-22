@@ -1,0 +1,113 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //hero title
+      .small-bg-pricing-table
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Our", 
+              title:"Pricing Table",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/portfolio/pf2.jpg",
+              alt:"pricing-table-hero-image"
+            })
+      
+      // accordians
+      .container.my-lg-8.my-md-7.my-6
+        .row.gx-lg-5
+          .col-lg-4.mb-lg-0.mb-5
+            .border.border-1.border-grain-brown.pt-px-48.pb-px-48.px-3
+              div.px-4
+                h5.font-letter-space.mb-px-23 Intro
+                div.mb-2
+                  span.h1.price-font.me-1 $20
+                  span.h5.lead.fst-italic.text-flame-pea / month 
+                div.pt-px-37
+                  p.mb-px-30 Suspendisse in massa id velit ullamcorper laoreet ac bibendum velit. Pellentesque nec erat in mi molestie pharetra.
+
+                ul.list-unstyled.pt-2
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Suspendisse in massa velit ullacorper
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Pellentesque hendrerit at turpis
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Nulla malesuada sed ex maximus
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    | Quisque pulvinar amet ete elementum 
+                  li.mb-4
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    | Mauris faucibus nibh congue sollicitudin
+
+                div.pt-px-17
+                  a.h6.pt-1.btn-link(href="page-contact.html") Get started
+          .col-lg-4.mb-lg-0.mb-5
+            .bg-texture-image.pt-px-49.pb-px-49.px-3
+              div.px-4
+                h5.font-letter-space.mb-px-23 Popular
+                div.mb-2
+                  span.h1.price-font.me-1 $40
+                  span.h5.lead.fst-italic.text-flame-pea / month
+                div.pt-px-37
+                  p.mb-px-30 Suspendisse in massa id velit ullamcorper laoreet ac bibendum velit. Pellentesque nec erat in mi molestie pharetra.
+
+                ul.list-unstyled.pt-2
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Suspendisse in massa velit ullacorper
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Pellentesque hendrerit at turpis
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Nulla malesuada sed ex maximus
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    | Quisque pulvinar amet ete elementum 
+                  li.mb-4
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    | Mauris faucibus nibh congue sollicitudin
+
+                div.pt-px-17
+                  a.h6.pt-1.btn-link(href="page-contact.html") Get started
+          .col-lg-4
+            .border.border-1.border-grain-brown.pt-px-48.pb-px-48.px-3
+              div.px-4
+                h5.font-letter-space.mb-px-23 Enterprise
+                div.mb-2
+                  span.h1.price-font.me-1 $90
+                  span.h5.lead.fst-italic.text-flame-pea / month
+                div.pt-px-37
+                  p.mb-px-30 Suspendisse in massa id velit ullamcorper laoreet ac bibendum velit. Pellentesque nec erat in mi molestie pharetra.
+
+                ul.list-unstyled.pt-2
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Suspendisse in massa velit ullacorper
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Pellentesque hendrerit at turpis
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    |  Nulla malesuada sed ex maximus
+                  li.mb-3
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    | Quisque pulvinar amet ete elementum 
+                  li.mb-4
+                    i.fas.fa-check-circle.text-parsley.me-2.me-2
+                    | Mauris faucibus nibh congue sollicitudin
+
+                div.pt-px-17
+                  a.h6.pt-1.btn-link(href="page-contact.html") Get started
+
+      include includes/icons-nevigation

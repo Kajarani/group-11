@@ -1,0 +1,291 @@
+//- page title
+mixin pagetitle(data)
+  // Page Title
+  .page-main-title
+    .container
+      .row.align-items-center
+        .col-lg-6
+          if data.title
+            h2.mb-4.entry-title= data.title
+          else
+            h2.entry-title Page Title
+          if data.description
+            p= data.description
+          else
+            p Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+
+  // End Page Title
+
+mixin entryMetaTop(author, categories, date, commentCount, isEdit=false )
+  .entry-meta-top
+    if author
+      span.entry-author
+        = author
+    if categoty
+      span.entry-meta-categoty
+        = categoty
+    if date
+      span.entry-meta-date 
+        = date
+    if commentCount
+      span.entry-comment-count
+        a(href="/blog-single-post.html#comments")
+          i.far.fa-comment-alt
+          = commentCount
+    if isEdit
+      span.entry-comment-count
+        a(href="/blog-single-post.html#comments")
+          i.far.fa-edit
+          | Edit
+//- Blog
+mixin blog(style, column, isReadMore=false, ...items)
+  // Blog
+  div.row.gx-lg-5.gy-lg-5.gy-3.gx-3.blog-post(class=style)
+    each item in items
+      div(class=column)
+        article
+          figure.entry-media
+            if item.image
+              a(href="blog-single-post.html")
+                img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt=item.alt).height-px-320.object-fit-cover.w-100
+            if item.category
+              span.entry-meta-category
+                a(href='blog-three-col.html')= item.category
+          .entry-content-wrapper.bg-texture-image
+            header.entry-header
+              a(href='blog-single-post.html')
+                h5.mb-px-17.hover-color= item.title
+              +entryMetaTop(item.author, item.category, item.date, item.commentCount, item.isEdit)
+            if item.content
+              .entry-content
+                p= item.content
+              //- if isReadMore
+              //-   footer.entry-footer
+              //-     a.entry-read-more(href='blog-single-post.html') Read More
+              //-       i.fas.fa-long-arrow-alt-right.ml-1
+  // End Blog
+
+//- Blog list style
+mixin blogList(style, column,isReadMore=false, ...items)
+  // Blog
+  div.row.blog-post.blog-list-style(class=style)
+    each item in items
+      div(class=column)
+        article
+          .entry-media
+            a(href="blog-single-post.html")
+              img(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt=item.alt)
+          .entry-content-wrapper
+            h5.entry-title.hover-color
+              a(href='blog-single-post.html')= item.title
+            span.entry-meta-category
+              a(href='blog-three-col.html')= item.category
+              span.post-meta-date= item.date
+            if item.content
+              .entry-content
+                p= item.content
+              //- if isReadMore
+              //-   a.entry-read-more(href='blog-single-post.html') Read More
+              //-     i.fas.fa-long-arrow-alt-right.ml-1
+  // End Blog
+
+//- card
+mixin blogcard(style, column, isReadMore=false, ...items)
+  // Blog
+  div.row.gx-lg-5.gy-lg-5.gy-3.gx-3.blog-post(class=style)
+    each item in items
+      div(class=column)
+        article
+          figure.entry-media
+            if item.image
+              a(href="blog-single-post.html")
+                img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt=item.alt)
+          .entry-content1-wrapper.bg-texture-image.pb-px-30
+            header.entry-header
+              h2.entry-title.hover-color
+                a(href='blog-single-post.html')= item.title
+              .mb-2
+                +entryMetaTop(item.author, item.category, item.date, item.commentCount, item.isEdit)
+            if item.content
+              .entry-content
+                p= item.content
+              if isReadMore
+                footer.entry-footer
+                  a.entry-read-more(href='blog-single-post.html') Read More
+                    i.fas.fa-long-arrow-alt-right.ms-1
+  // End Blog
+
+//- Shop - Products
+mixin shop( style, column, isProductsFilter=false, ...items)
+  div.row.gx-lg-5.gy-lg-6(class=style)
+    each item in items
+      div(class=column)
+        article.mb-lg-0.mb-px-md-40.mb-px-20
+          if item.image
+            a(href='single-product.html')
+              img.mb-px-18(src=item.image, alt=item.alt).height-px-456.w-100.object-fit-cover
+          if item.title
+            h5.product-title
+              a(href='single-product.html')= item.title
+          if item.price
+            span.price
+              span.amount
+                span.currencySymbol $
+                  = item.price
+          div.mt-px-14
+            a.h6.btn-link.border-2.border-bottom.shop-button-style(href='single-product.html') Add to cart
+  // End Products
+
+//- pagination
+mixin pagination
+  // Pagination
+  nav.pagination-holder
+    ul.pagination
+      li.page-item.active
+        a.page-link(href='#') 1
+      li.page-item
+        a.page-link(href='#') 2
+      li.page-item
+        a.page-link(href='#') 3
+      li.page-item
+        a.page-link(href='#') 4
+      li.page-item
+        a.page-link(href='#' aria-label='Next')
+          span >
+          span.visually-hidden Next
+  // End Pagination
+
+
+//- portfolio entry meta
+mixin entryMetaProject(author, categories, date, commentCount, isEdit=false )
+  .entry-meta-top
+    if categories
+      span.entry-meta-category
+        i.fas.fa-folder
+        a(href='blog-three-col.html')= categories
+
+
+//- portfolio
+mixin portfolio(style, column, isReadMore=false, ...items)
+  // Portfolio
+  div.row.portfolio(class=style)
+    each item in items
+      div(class=column)
+        article
+          figure.entry-media
+            if item.image
+              .pr-5
+                img(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt=item.alt)
+          .entry-content-wrapper
+            header.entry-header
+              .entry-meta-top
+                span.entry-meta-category
+                  a(href='blog-three-col.html')= item.category
+              h2.entry-title.pr-3
+                a(href='portfolio-single-project.html')= item.title
+            if item.content
+              .entry-content.pr-3
+                p= item.content
+  // End Portfolio
+
+//- partner 
+mixin partner(style, column, isReadMore=false, ...items)
+  .row.g-lg-5(class=style)
+    each item in items
+      div(class=column)
+        artical.mb-px-lg-0.mb-px-md-40
+          .text-center
+            if item.image
+              img.mb-px-36(src=item.image, alt=item.alt).height-px-150.object-fit-cover
+            if item.title
+              h4.mb-px-28= item.title
+            if item.content
+              p= item.content
+
+//- team
+mixin team(style, column, isReadMore=false, ...items)
+  div.row.gx-lg-5.gy-lg-5(class=style)
+    each item in items
+      div(class=column)
+        artical
+          if item.image
+            a(href="single-project.html")
+              img(src=item.image, alt=item.alt).height-px-408.object-fit-cover.w-100
+          .pt-px-30
+            if item.title
+              h5.font-weight-bold.mb-px-12= item.title
+            if item.designation
+              h6.font-letter-space.mb-px-22= item.designation
+            ul.list-unstyled.list-inlinetrue.mb-0
+              li.list-inline-item.pe-px-16
+                a(href='#')
+                  i.fab.fa-facebook.social-icon-style
+              li.list-inline-item.pe-px-16
+                a(href='#')
+                  i.fab.fa-twitter.social-icon-style
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-youtube.social-icon-style
+
+//- portfolio
+mixin portfolio(style, column, isReadMore=false, ...items)
+  div.row.g-lg-5(class=style)
+    each item in items
+      div(class=column)
+        artical
+          if item.image
+            a(href="single-project.html")
+              img(src=item.image, alt=item.alt).height-px-550.object-fit-cover.w-100
+          .pt-px-36.pb-px-12
+            if item.category
+              h6.font-letter-space.mb-px-4= item.category
+            .mb-px-17 
+              if item.title
+                a(href="single-project.html")
+                  h4.hover-color= item.title
+            .mb-0
+              if item.content
+                p.mb-0= item.content
+
+//- portfolio three col
+mixin portfolio-three-col(style, column, isReadMore=false, ...items)
+  div.row.g-lg-5(class=style)
+    each item in items
+      div(class=column)
+        artical
+          if item.image
+            a(href="single-project.html")
+              img(src=item.image, alt=item.alt).height-px-355.object-fit-cover.w-100
+          .pt-px-36.pb-px-12
+            if item.category
+              h6.font-letter-space.mb-px-4= item.category
+            .mb-px-17 
+              if item.title
+                a(href="single-project.html")
+                  h4.hover-color= item.title
+            .mb-0
+              if item.content
+                p.mb-0= item.content
+
+//- hero background
+mixin hero-bg(style, column, isReadMore=false, ...items)
+  div.row.gx-lg-5(class=style)
+    each item in items
+      div(class=column)
+        artical
+          .row.gx-lg-5.pt-px-lg-151.pb-px-lg-151.pt-px-md-40.pb-px-md-70.pt-px-24.pb-px-60
+            .col-lg-6.order-lg-1
+                .d-lg-none
+                  if item.image
+                    img.mb-px-lg-0.mb-px-md-40.mb-px-30(src=item.image, alt=item.alt).height-px-355.object-fit-cover.w-100
+            .col-lg-6.my-auto
+              .position-relative
+                .me-px-lg-80.mt-px-4
+                  if item.tag
+                    h5.font-letter-space.mb-px-7= item.tag
+
+                  if item.title
+                    h1= item.title
+                  if item.content
+                    p.lead.mb-px-14= item.content
+                  img.d-lg-block.d-none(src="assets/images/flowers/flower.png", alt="hero flower image").position-absolute.top-px-n-lg-60.start-px-n-lg-84

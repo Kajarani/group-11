@@ -1,0 +1,25 @@
+.property-block{
+    margin-bottom: 57px;
+    .property-item{
+        .content-image{
+            margin-bottom: 25px;
+        }
+        .content-title{
+            margin-bottom: 15px;
+            color: $headings-color;
+        }
+        .content-price{
+            color:$grain-brown;
+            @include font-size(18px);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .content-meta{
+            color:$bay-leaf;
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+
+    }
+
+}

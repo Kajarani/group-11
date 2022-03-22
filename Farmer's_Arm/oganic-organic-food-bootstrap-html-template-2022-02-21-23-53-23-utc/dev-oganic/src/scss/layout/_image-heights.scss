@@ -1,0 +1,231 @@
+.object-fit-cover {
+    object-fit: cover;
+  }
+  .height-px-780 {
+    @include media-breakpoint-up(lg){
+      height: 780px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 700px;
+    }
+    @include media-breakpoint-down(md){
+      height: 400px;
+    }
+  }
+  .height-px-730 {
+    @include media-breakpoint-up(lg){
+      height: 730px;
+    }
+   }
+   .height-px-700 {
+    @include media-breakpoint-up(lg){
+      height: 700px;
+    }
+   }
+   .height-px-750 {
+    @include media-breakpoint-up(lg){
+      height: 756px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+   }
+   .height-px-774 {
+    @include media-breakpoint-up(lg){
+      height: 774px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+   }
+   .height-px-650 {
+    @include media-breakpoint-up(lg){
+      height: 650px;
+    }
+   }
+   .height-px-630 {
+    @include media-breakpoint-up(lg){
+      height: 630px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+   }
+   .height-px-600 {
+    @include media-breakpoint-up(md){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+   }
+   .height-px-614 {
+    @include media-breakpoint-up(md){
+      height: 614px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+   }
+   .height-px-320 {
+    @include media-breakpoint-up(lg){
+      height: 320px;
+    }
+   }
+   .height-px-200 {
+      height: 90px;
+      width: 170;
+      @include media-breakpoint-down(lg){
+        height: 70px;
+      }
+   }
+   .height-px-150 {
+    height: 150px;
+ }
+   .height-px-350 {
+    @include media-breakpoint-up(lg){
+      height: 350px;
+    }
+   }
+   .height-px-355 {
+    @include media-breakpoint-up(lg){
+      height: 355px;
+    }
+   }
+.height-px-382 {
+    @include media-breakpoint-up(lg){
+      height: 383px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+   }
+  .height-px-407 {
+    @include media-breakpoint-up(lg){
+      height: 407px;
+    }
+  }
+  .height-px-414 {
+    @include media-breakpoint-up(lg){
+      height: 414px;
+    }
+  }
+  .height-px-456 {
+    @include media-breakpoint-up(lg){
+      height: 456px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+  }
+  .height-px-460 {
+    @include media-breakpoint-up(lg){
+      height: 460px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 480px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+  }
+  .height-px-472 {
+    @include media-breakpoint-up(lg){
+      height: 472px;
+    }
+  }
+  .height-px-440 {
+    @include media-breakpoint-up(lg){
+      height: 440px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 320px;
+    }
+    @include media-breakpoint-down(md){
+      height: 250px;
+    }
+  }
+  .height-px-408 {
+    @include media-breakpoint-up(lg){
+      height: 408px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 608px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+  }
+  .height-px-520 {
+    @include media-breakpoint-up(lg){
+      height: 520px;
+    }
+  }
+  .height-px-542 {
+    @include media-breakpoint-up(lg){
+      height: 542.99px;
+    }
+  }
+  .height-px-550 {
+    @include media-breakpoint-up(lg){
+      height: 550px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+  }
+  .height-px-500 {
+    @include media-breakpoint-up(lg){
+      height: 500px;
+    }
+  }
+  .height-px-413 {
+    @include media-breakpoint-up(lg){
+      height: 413px;
+    }
+  }
+  .height-px-50 {
+    @include media-breakpoint-up(lg){
+      height: 80px;
+    }
+  }
+  .height-px-853 {
+    @include media-breakpoint-up(lg){
+      height: 853px;
+    }
+    @include media-breakpoint-down(lg){
+      height: 600px;
+    }
+    @include media-breakpoint-down(md){
+      height: 320px;
+    }
+  }
+  .line-height-35{
+    line-height: 35px;
+  }
+  
+  .height-px-60{
+    height: 60px;
+    @include media-breakpoint-down(lg){
+      height: 170px;
+      width: 170px;
+    }
+  }

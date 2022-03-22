@@ -1,0 +1,45 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Check",
+              title:"Progress Bar",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .col-6
+              p.pb-3
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                | nibh euismod tincidunt
+                | ut laoreet dolore magna aliquam erat volutpat. 
+
+            .progress.mb-3
+              .progress-bar(role='progressbar' style='width: 10%' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100') 10%
+            .progress.mb-3
+              .progress-bar.bg-success(role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 25%
+            .progress.mb-3
+              .progress-bar.bg-info(role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100') 50%
+            .progress.mb-3
+              .progress-bar.bg-warning(role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100') 75%
+            .progress.mb-3
+              .progress-bar.bg-danger(role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100') 100%
+
+      include includes/icons-nevigation

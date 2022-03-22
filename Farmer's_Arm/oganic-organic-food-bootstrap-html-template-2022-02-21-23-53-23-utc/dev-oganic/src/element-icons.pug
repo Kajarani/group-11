@@ -1,0 +1,64 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Icons",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .col-6.mb-5
+              h3.mb-3.text-flame-pea Font Awesome
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                | nibh euismod tincidunt
+                | ut laoreet dolore magna aliquam erat volutpat. 
+
+            .d-lg-flex.justify-content-between.mt-4.mb-3.fa-2x
+              a(href='#')
+                i.m-2.fab.fa-facebook-f(aria-hidden='true')
+              a(href='#')
+                i.m-2.fab.fa-twitter(aria-hidden='true')
+              a(href='#')
+                i.m-2.fab.fa-linkedin(aria-hidden='true')
+              a(href='#')
+                i.m-2.fab.fa-instagram(aria-hidden='true')
+              a(href='#')
+                i.m-2.fab.fa-skype(aria-hidden='true')
+              a(href='#')
+                i.m-2.fab.fa-wordpress(aria-hidden='true')
+              a(href='#')
+                i.m-2.fab.fa-youtube(aria-hidden='true')
+            .d-lg-flex.justify-content-between.mt-4.mb-3.fa-2x
+              a(href='#')
+                i.m-2.fas.fa-charging-station(aria-hidden='true')
+              a(href='#')
+                i.m-2.fas.fa-cog(aria-hidden='true')
+              a(href='#')
+                i.m-2.fas.fa-cogs(aria-hidden='true')
+              a(href='#')
+                i.m-2.fas.fa-code-branch(aria-hidden='true')
+              a(href='#')
+                i.m-2.fas.fa-database(aria-hidden='true')
+              a(href='#')
+                i.m-2.fas.fa-file-word(aria-hidden='true')
+              
+      include includes/icons-nevigation

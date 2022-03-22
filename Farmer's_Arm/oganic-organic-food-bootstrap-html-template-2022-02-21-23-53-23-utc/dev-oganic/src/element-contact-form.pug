@@ -1,0 +1,45 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+  .entry-content
+    //- Page title
+    .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Contact Form",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+    // Contact Form
+    .container
+      .row.large-gutters
+        .col-lg-3.mb-7
+          //- Elements nav
+          include includes/elements-nav
+        .col-lg-9.mb-7
+          // contact page
+          .px-5.py-5
+            h1.mb-3 Contact Form 
+            p.mb-5 Pellentesque sagittis nibh venenatis sapieni congue consectetur. Integer nulla nunc, efficitur sit amet sagittis sed, suscipit et magna. Nulla porttitor neque non dapibus nec elit tristique sagittis.
+            form#contact-form(method='post' action='assets/php/contact.php')
+              .mb-4.pb-2
+                input#form_name.form-control(type='text' name='fname' placeholder='Name', required)
+              .mb-4.pb-2
+                input#form_email.form-control(type='text' name='lname' placeholder='Email', required)
+              .mb-4.pb-2
+                input#subject.form-control(type='text' name='subject' placeholder='Subject')
+              .mb-4.pb-2
+                textarea#form_message.form-control( name='message' placeholder='Message' rows='5', required)   
+              .mb-4 
+                a.btn.btn-parsley(href='#') Submit
+
+      include includes/icons-nevigation

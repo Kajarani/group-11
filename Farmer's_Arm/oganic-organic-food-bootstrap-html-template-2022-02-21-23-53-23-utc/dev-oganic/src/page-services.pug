@@ -1,0 +1,148 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+    .entry-content
+      //hero title
+      .small-bg-service
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Our", 
+              title:"Services",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/services/sr1.jpg",
+              alt:"service-hero-image"
+            })
+
+      // heading section
+      .container.mt-px-lg-119.mb-px-lg-55.mt-px-md-50.mb-px-md-50.mt-px-40.mb-px-40
+        .row  
+          .col-lg-8
+            h1.mb-px-28.tab-font You don't have to cook fancy or complicated masterpieces - just good food from fresh ingredients.
+            h5.font-family-base.text-flame-pea - Julia Child
+
+      // full image
+      .overflow-hidden
+        .container.mb-px-lg-120.mb-px-md-80.mb-px-60
+          .row
+            .col-lg-12
+              .position-relative
+                img(src="assets/images/portfolio/pf7.jpg", alt="services pf7-image").height-px-550.w-100.object-fit-cover
+                img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f18.png", alt="f18 flower image").position-absolute.top-px-n-lg-5.end-px-n-lg-23
+
+
+      // list section
+      .container.mb-px-lg-120.mb-px-md-80.mb-px-60
+        .row.gx-lg-5
+          .col-lg-6
+            .position-relative
+              img.mb-px-lg-0.mb-px-md-50.mb-px-30(src="assets/images/services/sr2.jpg", alt="services sr2-image").height-px-630.w-100.object-fit-cover
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/1.png", alt="1 flower image").position-absolute.top-px-lg-10.start-px-n-lg-27
+
+          .col-lg-6.my-auto
+            .ms-px-lg-32.me-px-lg-50
+              h5.font-letter-space.text-parsley.mb-px-8 Go Organic
+              h2.mb-px-28 It’s always better when it’s natural.
+              p.mb-px-33 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida magna ut diam varius, vitae mattis neque tempus. Maecenas id tortor ac augue commodo rutrum. Sed in tempor urna. Aenean porttitor velit neque, vel efficitur nulla vehicula eget.
+              ul.list-unstyled
+                li.mb-px-12
+                  i.fas.fa-check.text-parsley.me-px-9
+                  |  Donec feugiat ipsum sed enim ullamcorper
+                li.mb-px-12
+                  i.fas.fa-check.text-parsley.me-px-9
+                  |  Nullam fermentum vel odio ac congue
+                li.mb-px-12
+                  i.fas.fa-check.text-parsley.me-px-9
+                  |  Praesent tincidunt ante auctor tellus dictum
+                li.mb-px-12
+                  i.fas.fa-check.text-parsley.me-px-9
+                  |  Suspendisse posuere vel massa quis sodales
+                li.mb-px-37
+                  i.fas.fa-check.text-parsley.me-px-9
+                  |  Cestibulum elementum lectus accumsan
+
+              a.btn.btn-parsley(href="page-contact.html") Get started
+      
+      // logo section
+      .container.mt-px-lg-120.mb-px-lg-120.mt-px-md-80.mb-px-md-80.mt-px-60.mb-px-60
+        .row.gx-lg-5
+          .col-lg-6.order-lg-1.mb-lg-0.mb-px-30
+            .position-relative
+              img(src="assets/images/services/sr4.jpg", alt="services sr3-image").height-px-630.w-100.object-fit-cover
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f8.png", alt="f8 flower image").position-absolute.top-px-lg-8.end-px-n-lg-36
+            
+          .col-lg-6.my-auto
+            .ms-px-lg-32
+              h5.font-letter-space.text-parsley.mb-px-8 Go Organic
+              h2.mb-px-17 It’s always better when it’s natural.
+              .pe-px-lg-40.pb-px-36
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque, urna libero lacinia nisi, vitae viverra augue turpis eget dui. Suspendisse pellentesque iaculis venenatis. 
+              
+              .pe-px-lg-60
+                .row.gx-lg-0.mb-px-md-45.mb-px-30
+                  .col-3
+                    img(src="assets/images/logo4.png", alt="logo-4")
+                  .col-9
+                    .ms-px-n-5
+                      h5.mb-px-12 Eat clean and green
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque.
+                .row.gx-lg-0.mb-px-md-45.mb-px-30
+                  .col-3
+                    img(src="assets/images/logo5.png", alt="logo-4")
+                  .col-9
+                    .ms-px-n-5
+                      h5.mb-px-12 Grown by Nature
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque.
+                .row.gx-lg-0
+                  .col-3
+                    img(src="assets/images/logo6.png", alt="logo-4")
+                  .col-9
+                    .ms-px-n-5
+                      h5.mb-px-12 Eat good, Feel good
+                      p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, dolor nec placerat scelerisque.
+
+      // list section
+      .container.mb-px-lg-120.mb-px-md-80.mb-px-60
+        .row.gx-lg-5
+          .col-lg-6
+            .position-relative
+              img.mb-px-lg-0.mb-px-md-50.mb-px-30(src="assets/images/services/sr3.jpg", alt="services sr4-image").height-px-630.w-100.object-fit-cover
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-lg-10.start-px-n-lg-36
+          .col-lg-6.my-auto
+            .ms-px-lg-32.me-px-lg-50
+              h5.font-letter-space.text-parsley.mb-px-8 Go Organic
+              h2.mb-px-28 It’s always better when it’s natural.
+              p.mb-px-29 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida magna ut diam varius, vitae mattis neque tempus. Maecenas id tortor ac augue commodo rutrum. Sed in tempor urna. Aenean porttitor velit neque, vel efficitur nulla vehicula eget.
+              p.mb-px-37 Etiam consectetur at leo sed pellentesque. Vivamus luctus lacus vitae felis lobortis condimentum. Suspendisse varius dolor a neque placerat gravida. Pellentesque blandit quam orci, ut eleifend lectus accumsan eget.
+              a.btn.btn-parsley(href="page-contact.html") Get started
+
+      // partners
+      .container.mt-px-lg-120.mt-px-md-80.mt-px-60.mb-px-lg-120.mb-px-md-80.mb-px-60
+        .row.gx-lg-5.pt-px-lg-15.pb-px-lg-29
+          .col-lg-4.mb-lg-0.mb-px-md-40.mb-px-30
+            .text-center.bg-texture-image.py-md-5.py-4
+              img.mb-px-27(src="assets/images/logo7.png", alt="logo4")
+              h5.mb-px-18 Farm raised food
+              .px-2
+                p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+          .col-lg-4.mb-lg-0.mb-px-md-40.mb-px-30              
+            .text-center.bg-texture-image.py-md-5.py-4
+              img.mb-px-27(src="assets/images/logo8.png", alt="logo4")
+              h5.mb-px-18 100% organic food
+              .px-2
+                p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+          .col-lg-4
+            .text-center.bg-texture-image.py-md-5.py-4
+              img.mb-px-27(src="assets/images/logo9.png", alt="logo4")
+              h5.mb-px-18 Grown naturally
+              .px-2
+                p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+
+
+      include includes/icons-nevigation

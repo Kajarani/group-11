@@ -1,0 +1,116 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //title
+      .small-bg-team
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"About our", 
+              title:"Team",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/team/t9.jpg",
+              alt:"team-hero-image"
+            })
+
+      // team heading section
+      .container.mt-px-lg-120.mt-px-md-80.mt-px-60
+        .row.gx-lg-5
+          .col-lg-6
+            .position-relative
+              img.mb-px-lg-0.mb-px-md-40.mb-px-30(src="assets/images/team/t1.jpg", alt="team 1-image").height-px-550.w-100.object-fit-cover
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/1.png", alt="1 flower image").position-absolute.top-px-lg-10.start-px-n-lg-27
+
+          .col-lg-6.my-auto
+            .ms-px-lg-32.me-px-lg-45.me-px-md-60
+              h5.font-letter-space.mb-px-4 quote
+              h2.fst-italic.mb-px-14 Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life forever.
+              p.mb-px-14 Nunc sed sapien a dui finibus placerat et nec urna. Vivamus libero leo, gravida quis maximus et, mattis at nulla. Phasellus tiu neque quis leo vehicula faucibus. Quisque in leo nec purus ullamcorper congue sit amet quis tellus non ultricies elit onec non ultricies elit.
+              h5.text-flame-pea.mb-px-12 Gerard Anderson
+              p.mb-px-22 From the chairman’s desk
+              ul.list-unstyled.list-inlinetrue.mb-0
+                li.list-inline-item.pe-px-16
+                  a(href='#')
+                    i.fab.fa-facebook.social-icon-style
+                li.list-inline-item.pe-px-16
+                  a(href='#')
+                    i.fab.fa-twitter.social-icon-style
+                li.list-inline-item
+                  a(href='#')
+                    i.fab.fa-youtube.social-icon-style
+      
+      // text section
+      .container.mt-px-lg-87.mt-px-md-60.mt-px-40
+        .row.gx-lg-5
+          .col-lg-8
+            p.lead.mb-px-13 Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.
+            p.mb-0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+      // Team
+      .overflow-hidden
+        .container.mt-px-lg-91.mt-px-md-70.mt-px-60.position-relative
+          img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-lg-8.end-px-n-lg-35
+
+          +team(
+            'card-post-style',
+            'col-lg-4 mb-px-lg-0 mb-px-md-50 mb-px-40',
+            true,
+            {
+              image:"assets/images/team/t2.jpg",
+              alt:'t2 image',
+              designation:"Managing Director",
+              title:"Marsh James"
+            },
+            {
+              image:"assets/images/team/t3.jpg",
+              alt:'t3 image',
+              designation:"Company CEO",
+              title:"Marina Ellen"
+            },
+            {
+              image:"assets/images/team/t4.jpg",
+              alt:'t4 image',
+              designation:"PRODUCTION PARTNER",
+              title:"Gerry Heller"
+            },
+            {
+              image:"assets/images/team/t5.jpg",
+              alt:'t5 image',
+              designation:"Team Leader",
+              title:"Jumana Gerry"
+            },
+            {
+              image:"assets/images/team/t6.jpg",
+              alt:'t6 image',
+              designation:"Managing Director Finance",
+              title:"Jully Ellen"
+            },
+            {
+              image:"assets/images/team/t7.jpg",
+              alt:'t7 image',
+              designation:"Managing Director Soft",
+              title:"Chris Jhons"
+            }
+            )
+      
+      //last section 
+      .container.mt-px-lg-120.mb-px-lg-120.mb-px-md-80.mb-px-60
+        .row.gx-lg-5
+          .col-lg-6
+            .position-relative
+              img.mb-px-lg-0.mb-px-md-40.mb-px-30(src="assets/images/team/t8.jpg", alt="team 8-image").height-px-500.w-100.object-fit-cover
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f16.png", alt="f16 flower image").position-absolute.top-px-lg-10.start-px-n-lg-27
+          
+          .col-lg-6.my-auto
+            .ms-px-lg-52
+              h5.font-letter-space.mb-px-4 quote
+              h2.mb-px-14 Working with us?
+              p.mb-px-14 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              a.btn.btn-parsley(href="page-contact.html") Apply now
+      include includes/icons-nevigation

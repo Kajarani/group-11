@@ -1,0 +1,73 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Process",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .container
+              .row.gx-md-5
+                .col-md-6.mb-md-0.mb-px-40
+                  .bg-saltpan.pt-px-lg-81.pb-px-lg-83.ps-px-lg-40.pe-px-lg-40.pt-px-40.pb-px-40.ps-px-40.pe-px-40
+                    .row.mb-px-5
+                      .col-lg-1.col-2
+                        i.fas.fa-pepper-hot.text-flame-pea.icon-left-quote-34
+                      .col-lg-11.col-10
+                        .text-start.ms-px-lg-18  
+                          h3.h3-md Our Menu
+                    p.mb-px-28 Donec fermentum sodales lacus ut mollis. Proin posuere urna eu quam pellentesque, vel sagittis ipsum pulvinar. Nunc sed tellus. Nullam dapibus et turpis ut ultricies.
+                    a.btn.btn-parsley(href="shop.html") View more
+                .col-md-6
+                  .bg-texture-image.pt-px-lg-81.pb-px-lg-83.ps-px-lg-40.pe-px-lg-40.pt-px-40.pb-px-40.ps-px-40.pe-px-40
+                    .row.mb-px-5
+                      .col-lg-1.col-2
+                        i.fab.fa-uber.text-flame-pea.icon-left-quote-34
+                      .col-lg-11.col-10
+                        .text-start.ms-px-lg-18  
+                          h3.h3-md 24 hours delivery
+                    p.mb-px-28 Donec fermentum sodales lacus ut mollis. Proin posuere urna eu quam pellentesque, vel sagittis ipsum pulvinar. Nunc sed tellus. Nullam dapibus et turpis ut ultricies.
+                    a.btn.btn-parsley(href="single-product.html") Order now
+              
+              .row.gx-md-5.mt-px-lg-48.mt-px-40
+                .col-md-6.mb-md-0.mb-px-40
+                  .bg-texture-image.pt-px-lg-81.pb-px-lg-83.ps-px-lg-40.pe-px-lg-40.pt-px-40.pb-px-40.ps-px-40.pe-px-40
+                    .row.mb-px-5
+                      .col-lg-1.col-2
+                        i.fab.fa-uber.text-flame-pea.icon-left-quote-34
+                      .col-lg-11.col-10
+                        .text-start.ms-px-lg-18  
+                          h3.h3-md 24 hours delivery
+                    p.mb-px-28 Donec fermentum sodales lacus ut mollis. Proin posuere urna eu quam pellentesque, vel sagittis ipsum pulvinar. Nunc sed tellus. Nullam dapibus et turpis ut ultricies.
+                    a.btn.btn-parsley(href="single-product.html") Order now
+                .col-md-6
+                  .bg-saltpan.pt-px-lg-81.pb-px-lg-83.ps-px-lg-40.pe-px-lg-40.pt-px-40.pb-px-40.ps-px-40.pe-px-40
+                    .row.mb-px-5
+                      .col-lg-1.col-2
+                        i.fas.fa-pepper-hot.text-flame-pea.icon-left-quote-34
+                      .col-lg-11.col-10
+                        .text-start.ms-px-lg-18  
+                          h3.h3-md Our Menu
+                    p.mb-px-28 Donec fermentum sodales lacus ut mollis. Proin posuere urna eu quam pellentesque, vel sagittis ipsum pulvinar. Nunc sed tellus. Nullam dapibus et turpis ut ultricies.
+                    a.btn.btn-parsley(href="shop.html") View more
+                
+            include includes/icons-nevigation

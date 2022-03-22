@@ -1,0 +1,9 @@
+
+
+    .price {
+        @include font-size($h6-font-size);
+        font-family: $font-family-base;
+        font-weight: bold;
+        color: $flame-pea;
+        margin-bottom: 16px;
+    }

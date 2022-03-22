@@ -1,0 +1,103 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      // head services
+      .small-bg-blog
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            { 
+              tag:"Read", 
+              title:"Blog Card Three Col",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/contact-us/c4.jpg",
+              alt:"blog-three-col-image"
+            })
+
+      .container.mt-lg-8.mt-md-7.mt-6
+        +blogcard(
+          'card-post-style',
+          'col-md-6 col-lg-4',
+          isReadMore=false,
+          {
+            image:'assets/images/blog/b1.jpg',
+            alt:'b1 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Naturally grown green pumpkin',  
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b2.jpg',
+            alt:'b2 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Fresh tomatoes harvesting',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b3.jpg',
+            alt:'b3 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Fresh vegetables are important',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b4.jpg',
+            alt:'b4 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Peas soap with fried bread',  
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b5.jpg',
+            alt:'b5 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Natural ingredient ‘s are important',  
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b6.jpg',
+            alt:'b6 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Vegetable Goods Good For Health',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b7.jpg',
+            alt:'b7 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Natural Meal are Important',             
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b8.jpg',
+            alt:'b8 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Ginger meal with oil Taste',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            },
+            {
+            image:'assets/images/blog/b9.jpg',
+            alt:'b9 image',
+            category:'Recource',
+            date:'January 20, 2021',
+            title:'Potato cutting are important',
+            content:'Cras erosed nisl, imperdiet in nisl rhoncus, lobortis tempus ligula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim nisl laoreet.'
+            }
+        )
+        .text-center.align-items-center.mt-5.mb-lg-8.mb-md-7.mb-5
+          a.btn.btn-parsley(href='#') Load More
+
+      include includes/icons-nevigation

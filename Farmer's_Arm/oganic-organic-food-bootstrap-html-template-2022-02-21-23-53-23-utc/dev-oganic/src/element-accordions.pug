@@ -1,0 +1,63 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Accordian",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            h1 FAQ's
+            div.mt-lg-5
+              .container.px-0
+                .row
+                  .col-lg-12
+                    #accordionExample.accordion
+                      .card.border-0.mb-4
+                        #headingOne.card-header.bg-transparent
+                          a.h5.mb-0.d-block(href='#' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                            | Q: What is the scope of your mining operations?
+
+                        #collapseOne.collapse.show(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
+                          .card-body
+                            div.pb-lg-0.pl-0.pr-lg-6.pr-md-6
+                              p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                              | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+                      .card.border-0.mt-4
+                        #headingTwo.card-header.bg-transparent
+                          a.h5.mb-0.d-block.collapsed(href='#' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                            | Q: How do you make steel and what is it used for?
+                        #collapseTwo.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+                          .card-body
+                            div.pb-lg-0.pl-0.pr-lg-6.pr-md-6
+                              p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                              | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+                      .card.border-0.mt-4
+                        #headingThree.card-header.bg-transparent
+                          a.h5.mb-0.d-block.collapsed(href='#' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                            | Q: How much steel do you produce each year?
+                        #collapseThree.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+                          .card-body
+                            div.pb-lg-0.pl-0.pr-lg-6.pr-md-6
+                              p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                              | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+
+      include includes/icons-nevigation

@@ -1,0 +1,112 @@
+.site-footer {
+
+  ol,
+  ul {
+    @include media-breakpoint-up(lg) {
+      padding-inline-start: $spacer;
+    }
+  }
+
+  .footer-widgets {
+  
+    @include media-breakpoint-down(lg) {
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 100px;
+      padding-bottom: 95px;
+    }
+
+    .footer-widget {
+      font-weight: 500;
+      margin-bottom: 25px;
+
+      .widget-title {
+        color: $saltpan;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        @include media-breakpoint-up(md) {
+          margin-bottom: 0px;
+        }
+
+        ul {
+          @include media-breakpoint-up(lg) {
+            padding-inline-start: 1rem;
+          }
+
+          padding-inline-start: 0rem;
+        }
+
+        li {
+          padding: $spacer/2.5 0;
+          font-weight: 500;
+        }
+      }
+
+      a {
+        color: $dim-grey;
+        font-weight: normal;
+
+        &:hover {
+          color: $flame-pea;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: $dim-grey;
+
+    a {
+      color: $dim-grey;
+
+    }
+
+    .icon {
+      font-size: 18px;
+      width: 1.25em;
+      color: $parsley;
+
+      &:hover {
+        color: $flame-pea;
+      }
+    }
+      .border-icon {
+        border-radius: 35px;
+        padding-right: 10px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-top: 34px;
+        padding-bottom: 34px;
+      }
+
+      padding-top: 0px;
+
+      .footer-nav.list-inline {
+        li {
+          display: inline-block;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          font-weight: 500;
+
+          &:not(:last-child) {
+            margin-right: $spacer * 0.5;
+          }
+        }
+      }
+    }
+  }

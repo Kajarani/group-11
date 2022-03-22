@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html id="html" class="no-js">
+
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeDefault.css" media="all">
+	<title>Documentation | Energetic Themes</title>
+</head>
+
+<body>
+	<div class="col-1">
+
+		<section class="markdown-section" id="GettingStarted">
+			<h1 id="getting-started"><a href="#/?id=getting-started" data-id="getting-started"
+					class="anchor"><span>Getting
+						started</span></a></h1>
+			<p>Before getting started you must have knowledge about <a href="https://nodejs.org/" target="_blank">Node
+					js</a>,
+				<a href="https://gulpjs.com//" target="_blank">gulpjs</a> and adequate knowledge about <a
+					href="https://sass-lang.com/" target="_blank">SCSS </a>and .pug <a href="https://pugjs.org/"
+					target="_blank">https://pugjs.org/</a></p>
+			<p>If you aren’t familiar with pug, you can still manage your way through this. But if you not, read up on
+				it. I
+				recommend learning <a href="https://codepen.io/mimoduo/post/learn-pug-js-with-pugs" target="_blank">pug
+					with pugs</a>.
+				Or from their <a href="https://pugjs.org/api/getting-started.html" target="_blank">docs</a>.</p>
+		</section>
+
+		<section class="markdown-section" id="bootstrap">
+			<h1 id="bootstrap"><a href="#/?id=bootstrap" data-id="bootstrap"
+					class="anchor"><span>Bootstrap 
+						started</span></a></h1>
+			<p>Oganic  template is Bootstrap v5 base. Before getting started you must have knowledge about <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+				<p><a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap Documentation</a>  </p>
+		</section>
+
+		<section class="markdown-section" id="directory-structure">
+			<h1 id="directory-structure"><a href="#/directory-structure?id=directory-structure"
+					data-id="directory-structure" class="anchor"><span>Directory structure</span></a></h1>
+			<pre v-pre="" data-lang="bash"><code class="lang-bash">
+Oganic  /
+	src/
+		├── images/
+		├── includes/
+		├── php/
+		├── scripts/
+			├── app/
+			├── vendor/
+		├── scss/
+			├── blocks/
+			├── layout/
+			├── modules/
+			├── base.scss
+			├── _mixins.scss
+			├── _variables.scss
+			├── bootstrap.scss
+			├── style.scss
+		├── **.pug files
+		└── webpack.config
+	├── gulpfile.js
+	├── package.json</code>
+				</pre>
+			<p>Let's see what's inside each directory and what are the pupose of each one.</p>
+			<h2 id="src"><a href="#/directory-structure?id=src" data-id="src"
+					class="anchor"><span><code>src/</code></span></a></h2>
+			<p>Contains all <code>*.pug</code> development files that are going to convert in HTML into
+				<code>_demo/</code> and
+				<code>_dist/</code> driectory.</p>
+			<h2 id="srcimages"><a href="#/directory-structure?id=srcimages" data-id="srcimages"
+					class="anchor"><span><code>src/images</code></span></a></h2>
+			<p>This folder houses your image files that you want to use in your template, such as logo, favicon, etc.
+			</p>
+			<h2 id="srcphp"><a href="#/directory-structure?id=srcphp" data-id="srcphp"
+					class="anchor"><span><code>src/php</code></span></a></h2>
+			<p>This directory contains all the PHP files which is somehow required for functionality of template, such
+				as
+				sending emails for contact us page.</p>
+			<h2 id="srcincludes"><a href="#/directory-structure?id=srcincludes" data-id="srcincludes"
+					class="anchor"><span><code>src/includes</code></span></a></h2>
+			<p>Contains pug file compnents that we are going to use in <code>src/</code> driectory for *.pug files.</p>
+			<h2 id="srcjs"><a href="#/directory-structure?id=srcjs" data-id="srcjs"
+					class="anchor"><span><code>src/js</code></span></a></h2>
+			<p>This directory contains all the JavaScript files which is somehow required for functionality of template.
+				<code>global.js</code>
+				contains third-part plugin call funcations and other tasks.</p>
+			<h2 id="srcscss"><a href="#/directory-structure?id=srcscss" data-id="srcscss"
+					class="anchor"><span><code>src/scss</code></span></a></h2>
+			<p>Contains scss file that that will bundle and convert into css into <code>_demo/assets/style</code>
+				driectory. To
+				modify template style you can edit <code>src/scss</code> scss files each file named after elements.
+				_variables.scss
+				contain variables like text color and size for scss elements.</p>
+		</section>
+
+
+		<section class="markdown-section" id="pug">
+			<h1 id="why-and-what-is-pug"><a href="#/pug?id=why-and-what-is-pug" data-id="why-and-what-is-pug"
+					class="anchor"><span>Why
+						and what is Pug?</span></a></h1>
+			<p>Long story short. In static HTML If you have to change header nav link or some text from footer and you
+				have more
+				then 100 files. You will have to open each file to modfiy that will drive you crazy. But pug save us
+				from this
+				problem.</p>
+
+			<div style="max-width: 500px; margin:0 auto">
+				<div style="width:100%;height:0;padding-bottom:89%;position:relative;"><iframe
+						src="https://giphy.com/embed/jquDWJfPUMCiI" width="100%" height="100%" style="position:absolute"
+						frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></div>
+			</div>
+
+
+			<p>I recommend learning <a href="https://codepen.io/mimoduo/post/learn-pug-js-with-pugs" target="_blank">pug
+					with
+					pugs</a>. Or their <a href="https://pugjs.org/api/getting-started.html" target="_blank">docs</a>.
+			</p>
+			<p>We are going to write our header code in <code>header.pug</code> and then going to import
+				<code>header.pug</code>
+				file in <code>layout.pug</code>(same we do with footer file). Then we import our <code>layout.pug</code>
+				file in
+				<code>index.pug</code>.</p>
+			<div style="max-width: 600px; margin:0 auto;"><img alt="pug-files-structure"
+					src="./images/pug-files-structure.png"></div>
+
+			<p>When we compile the code <code>index.pug</code> will extract code from <code>layout.pug</code> and
+				<code>layout.pug</code>
+				will extract code from <code>header.pug</code> and <code>footer.pug</code>.</p>
+			<div style="max-width: 500px; margin:0 auto;">
+
+				<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
+						src="https://giphy.com/embed/BKgxR8aRuJ1HW" width="100%" height="100%" style="position:absolute"
+						frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></div>
+
+			</div>
+		</section>
+		<section class="markdown-section" id="start-development">
+			<h1 id="start-development"><a href="#/start-development?id=start-development" data-id="start-development"
+					class="anchor"><span>Start
+						Development</span></a></h1>
+			<h3 id="install-development-dependencies"><a href="#/start-development?id=install-development-dependencies"
+					data-id="install-development-dependencies" class="anchor"><span>Install development
+						dependencies</span></a></h3>
+			<p>Make sure node js is installed on your machine. You can download nodejs from <a
+					href="https://nodejs.org/en/" target="_blank">here</a> </p>
+			<p>Go to <code>Oganic -package/dev-Oganic </code> directory to run command.</p>
+			<pre v-pre="" data-lang="bash"><code class="lang-bash">npm install</code></pre>
+			<p>This command installs a package, and any packages that it depends on.</p>
+			<h2 id="commands"><a href="#/start-development?id=commands" data-id="commands"
+					class="anchor"><span>Commands</span></a></h2>
+			<p>It's pretty easy... You do not have a bunch of commands, just two of them:</p>
+			<ul>
+				<li><code>gulp</code> – to start with development</li>
+				<li><code>gulp build</code> - to make it ready for production use. Ready to web use files will be output
+					in <code>_dist</code>
+					directory.</li>
+			</ul>
+			<h2 id="files-editing"><a href="#/start-development?id=files-editing" data-id="files-editing"
+					class="anchor"><span>Files
+						editing</span></a></h2>
+			<p>Afrer running <code>gulp</code> This will give you file watching, live server, browser synchronisation,
+				auto-rebuild, CSS injecting etc etc.
+				Live sever with browser synchronisation will be available at <code>http://localhost:3000</code>. Files
+				will sever
+				from <code>Oganic -package/dev-Oganic /_demo</code> directory.</p>
+			<p>Now go to <code>Oganic -package/dev-Oganic /src</code> directory and start editing files.</p>
+		</section>
+
+		<section class="markdown-section" id="HTML-structure">
+			<h1 id="html-structure"><a href="#/HTML-structure?id=html-structure" data-id="html-structure"
+					class="anchor"><span>HTML
+						Structure</span></a></h1>
+			<p>Template is based on Bootstrap 5.0 and uses the default Bootstrap 12 column grid system. <a
+					href="https://getbootstrap.com/docs/" target="_blank">Bootstrap documentation</a></p>
+			<pre v-pre=""
+				data-lang="bash"><code class="lang-bash"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-md-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-md-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+			<p>For a more detailed explanation of the Bootstrap grid - see the Bootstrap documentation <a
+					href="https://getbootstrap.com/docs/" target="_blank">here</a></p>
+			<p>Simple coding structure of page</p>
+			<pre v-pre=""
+				data-lang="bash"><code class="lang-bash"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">dir</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ltr<span class="token punctuation">"</span></span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en-US<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+			<span class="token comment">&lt;!-- Your Stylesheets, Scripts &amp; Title
+			============================================= --&gt;</span>
+			...
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+	
+			<span class="token comment">&lt;!-- Header
+			============================================= --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>navbar navbar-expand-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+				...
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	
+			<span class="token comment">&lt;!-- Site Content
+			 ============================================= --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-md-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-md-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	
+			<span class="token comment">&lt;!-- Footer
+			 ============================================= --&gt;</span>
+			 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>footer-top-area<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+				...
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>footer-bottom-area<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+				...
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+	
+			<span class="token comment">&lt;!-- javascript files
+			============================================= --&gt;</span>
+	
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+		</section>
+		
+		<section class="markdown-section" id="start-customization">
+			<h1 id="start-customization"><a href="#/start-customization?id=start-customization" data-id="start-customization"
+					class="anchor"><span>Customization</span></a></h1>
+
+			<h3 class="space-top">How to Change Logo</h3>
+			<p>You can use SVG or png logo.</p>
+			<img src="./images/logo.jpg">
+
+			<h3 class="space-top">How to Change Copy Right</h3>
+			<img src="./images/copyright.jpg">
+
+			<h3 class="space-top">How to Change theme color, font and other</h3>
+			<p>Template use default bootstrap scss stature for scss variables. You can learn more about Customize from  <a href="https://getbootstrap.com/docs/5.0/customize/overview/">Bootstrap Docs</a></p>
+			<img src="./images/variables.jpg">
+			
+
+			<h3 class="space-top">How to Change Email for Contact Form</h3>
+			<img src="./images/contact.jpg">
+
+		</section>
+
+		<section class="markdown-section" id="start-thanks">
+				<h1 id="start-thanks"><a href="#/start-thanks?id=start-thanks" data-id="start-thanks"
+						class="anchor"><span>Thanks</span></a></h1>
+
+				<p>Once again thank you for purchasing one of our Templates</p>
+				<h5>Best Regards				</h5>
+
+		</section>
+	</div>
+	<div class="col-2">
+		<nav class="sidebar-nav">
+			<ul>
+				<li> <a href="#GettingStarted">Getting Started</a> </li>
+				<li> <a href="#bootstrap">Bootstrap</a></li>
+				<li> <a href="#directory-structure">Directory structure</a></li>
+
+				<li><a href="#pug">Why and what is Pug?</a></li>
+				<li> <a href="#start-development">Start Development</a></li>
+				<li> <a href="#HTML-structure">HTML Structure</a> </li>
+				<li> <a href="#start-customization">Customization</a> </li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- CUSTOM PLUGINS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/syntax-highlighter/scripts/shCore.js"></script>
+	<script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+	<script language="javascript">
+		$(document).ready(function () {
+
+			SyntaxHighlighter.defaults['toolbar'] = false;
+			SyntaxHighlighter.all();
+
+		});
+	</script>
+</body>
+
+</html>

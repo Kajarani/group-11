@@ -1,0 +1,194 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Tables",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+
+            table.table.mb-5
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+            table.table.mb-5.bg-parsley
+              thead
+                tr.text-white
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr.text-white
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr.text-white
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr.text-white
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+
+
+            h4.mt-5.mb-4 Striped rows
+            table.table.mb-5.table-striped
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+            table.table.mb-5.table-striped.bg-saltpan
+              thead
+                tr.text-black
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr.text-black
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr.text-black
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr.text-black
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+
+            h4.mt-5.mb-4 Bordered table
+            table.table.mb-5.table-bordered
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+            table.table.mb-5.table-bordered.bg-white-smoke
+              thead
+                tr.text-black
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr.text-black
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr.text-black
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr.text-black
+                  th(scope='row') 3
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+            h4.mt-5.mb-4 Borderless table
+            table.table.mb-5.table-borderless
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+
+      include includes/icons-nevigation

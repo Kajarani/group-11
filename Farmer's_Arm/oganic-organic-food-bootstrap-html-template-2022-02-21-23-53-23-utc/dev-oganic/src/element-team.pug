@@ -1,0 +1,72 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Our",
+              title:"Team",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      // team 
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            h1.mb-5 Our Team Members
+            +team(
+              'card-post-style',
+              'col-lg-6 mb-px-lg-0 mb-px-md-50 mb-px-40',
+              true,
+              {
+                image:"assets/images/team/t2.jpg",
+                alt:'t2 image',
+                designation:"Managing Director",
+                title:"Marsh James"
+              },
+              {
+                image:"assets/images/team/t3.jpg",
+                alt:'t3 image',
+                designation:"Company CEO",
+                title:"Marina Ellen"
+              },
+              {
+                image:"assets/images/team/t4.jpg",
+                alt:'t4 image',
+                designation:"PRODUCTION PARTNER",
+                title:"Gerry Heller"
+              },
+              {
+                image:"assets/images/team/t5.jpg",
+                alt:'t5 image',
+                designation:"Team Leader",
+                title:"Jumana Gerry"
+              },
+              {
+                image:"assets/images/team/t6.jpg",
+                alt:'t6 image',
+                designation:"Managing Director Finance",
+                title:"Jully Ellen"
+              },
+              {
+                image:"assets/images/team/t7.jpg",
+                alt:'t7 image',
+                designation:"Managing Director Soft",
+                title:"Chris Jhons"
+              }
+              )
+
+      include includes/icons-nevigation

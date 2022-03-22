@@ -1,0 +1,37 @@
+//
+// Accordion
+//
+.accordion {
+
+
+    .card {
+        background-color: transparent;
+        .card-header {
+            border-bottom: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            a {
+                display: block;
+                position: relative;
+                &::before {
+                    content: "\f106";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    position: absolute;
+                    right: 0;
+                    padding-right: 15px;
+                    color: $flame-pea;
+                }
+                &.collapsed::before {
+                    content: "\f105";
+                }
+            }
+        }
+        .card-body{
+            margin-top: 0px;
+            background-color: transparent;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+}

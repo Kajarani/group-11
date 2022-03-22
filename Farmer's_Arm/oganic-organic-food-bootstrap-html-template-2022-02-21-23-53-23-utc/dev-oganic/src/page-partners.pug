@@ -1,0 +1,65 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //title
+      .small-bg-partner
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"our", 
+              title:"Partners",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/partner/pr1.jpg",
+              alt:"partner-hero-image"
+            })
+
+      .container.mt-px-lg-120.mb-px-lg-137.mt-px-md-80.mb-px-md-40.mt-px-60.mb-px-30
+        +partner(
+          'card-post-style',
+          'col-lg-4 mb-px-lg-0 mb-px-50 mb-px-40',
+          true,
+          {
+            image:"assets/images/partner/p1.png",
+            alt:'p1 image',
+            title:"Supply Partner",
+            content:"Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos eget scelerisque turpis et consequat enim uisque  litora inceptos torquent perem."
+          },
+          {
+            image:"assets/images/partner/p2.png",
+            alt:'p2 image',
+            title:"Managing Partner",
+            content:"Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos eget scelerisque turpis et consequat enim uisque  litora inceptos torquent perem."
+          },
+          {
+            image:"assets/images/partner/p3.png",
+            alt:'p3 image',
+            title:"Design Partner",
+            content:"Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos eget scelerisque turpis et consequat enim uisque  litora inceptos torquent perem."
+          },
+          {
+            image:"assets/images/partner/p4.png",
+            alt:'p4 image',
+            title:"Managing Partner",
+            content:"Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos eget scelerisque turpis et consequat enim uisque  litora inceptos torquent perem."
+          },
+          {
+            image:"assets/images/partner/p5.png",
+            alt:'p5 image',
+            title:"Design Partner",
+            content:"Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos eget scelerisque turpis et consequat enim uisque  litora inceptos torquent perem."
+          },
+          {
+            image:"assets/images/partner/p6.png",
+            alt:'p6 image',
+            title:"Supply Partner",
+            content:"Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos eget scelerisque turpis et consequat enim uisque  litora inceptos torquent perem."
+          }
+          )
+
+      include includes/icons-nevigation

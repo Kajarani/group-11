@@ -1,0 +1,132 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+    .entry-content
+      .bg-white-smoke
+        .pt-px-8.pb-px-0
+          .container.mt-px-8
+            .row.text-center
+              p.font-size-14.font-weight-medium Home /
+                a(href="shop.html")
+                  span.p.font-size-14.font-weight-medium  Chair /
+                span.p.font-size-14.font-weight-medium  The Mango lounge chair
+
+      .bg-texture-image
+        .container.pt-px-lg-100.pt-px-md-80.pt-px-60.pb-px-lg-100.pb-px-md-80.pb-px-60
+          .row.gx-lg-5
+            .col-lg-6.order-lg-1
+              .position-relative
+                img(src="assets/images/shop/s1.jpg", alt="shop")
+
+                .row.mt-4.z-index-flower
+                  .col-3
+                    img(src="assets/images/shop/s1.jpg", alt="shop")
+                  .col-3
+                    img(src="assets/images/shop/s2.jpg", alt="shop")
+                  .col-3
+                    img(src="assets/images/shop/s3.jpg", alt="shop")
+                  .col-3
+                    img(src="assets/images/shop/s4.jpg", alt="shop")
+                img.d-lg-block.d-none(src="assets/images/flowers/f8.png", alt="f8 flower image").position-absolute.top-px-lg-15.end-px-n-lg-40
+
+            .col-lg-6.mt-lg-4.mt-md-5.mt-5
+              h1.mb-px-26 Organic Wrap
+              h4.montserrat-family.mb-px-27.text-flame-pea $600
+              .row.mb-px-5
+                .col-3
+                  i.fas.fa-star.text-parsley
+                  i.fas.fa-star.text-parsley
+                  i.fas.fa-star.text-parsley
+                  i.fas.fa-star.text-parsley
+                  i.far.fa-star.text-parsley
+                .col-6
+                  p (20 customer reviews)  
+
+              .pe-lg-6
+                p Quisque eu quam venenatis, luctus eros ut, efficitur lectus. Maecenas sollicitudin tempor ante, id euismod mi ornare eget. Nunc nec hendrerit eros. Nulla facilisi. Fusce eget posuere dolor. Vestibulum et luctus lacus. Suspendisse nec erat eu ex lacinia luctus.
+
+              .pb-px-43.pt-px-29
+                form(action="/action_page.php")
+                  .row.gx-0
+                    .col-1
+                      input#quantity.form-control.number-border.border-2.border-flame-pea.px-0(type="number" name="quantity" min="1" max="500" placeholder="1")
+                    .col-6
+                      a.btn.btn-parsley(href='#') Add To Cart
+
+              p.mb-0 SKU: 00489
+              p.mb-0 Category: Machine
+              p.mb-0 Tag: In Stock
+
+      .bg-texture-image.pt-px-lg-120.pt-px-md-80.pt-px-60.pb-px-lg-100.pb-px-md-70.pb-px-50.border-top.border-white-linen
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              nav
+                #nav-tab.nav.nav-tabs(role="tablist")
+                  a#nav-Description-tab.nav-link.active.me-lg-6(data-bs-toggle="tab" href="#nav-Description" role="tab" aria-controls="nav-Description" aria-selected="true") Description
+                  a#nav-Additional-information-tab.nav-link.me-lg-6(data-bs-toggle="tab" href="#nav-Additional-information" role="tab" aria-controls="nav-Additional-information" aria-selected="false") Additional information
+                  a#nav-Reviews-tab.nav-link.me-lg-6(data-bs-toggle="tab" href="#nav-Reviews" role="tab" aria-controls="nav-Reviews" aria-selected="false") Reviews (1)
+                #nav-tabContent.tab-content
+                  #nav-Description.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-Description-tab")
+                    div.pe-lg-6.pt-lg-5.pt-md-4.pt-4
+                      h5.font-family-base.font-weight-bold.mb-4 Description 
+                      p Aliquam a feugiat sem. Duis sit amet mollis nibh, vitae venenatis lectus. Praesent porta diam quis lacus commodo ornare. Nulla facilisi. Nam risus lacus, vulputate a nunc nec, bibendum aliquam dolor. Vestibulum finibus consequat orci at tincidunt. Pellentesque eu eros in sem ultricies interdum. In facilisis quam id tellus pretium fermentum.
+
+                  #nav-Additional-information.tab-pane.fade(role="tabpanel" aria-labelledby="nav-Additional-information-tab")
+                    div.pe-lg-6.pt-lg-5.pt-md-4.pt-4
+                      h5.font-family-base.font-weight-bold.mb-4 Additional Information
+                      table.table.table-bordered
+                        tbody
+                          tr
+                            td.col-lg-2.text-center.h6 Size
+                            td.col-lg-10 Small , Medium , Large
+
+                  #nav-Reviews.tab-pane.fade.font-family-base.font-weight-bold(role="tabpanel" aria-labelledby="nav-Reviews-tab")
+                    div.pe-lg-6.pt-lg-5.pt-md-4.pt-4
+                      h5.mb-4 1 Review From The Mango lounge chair
+
+                      p.mb-0 Add a Review
+                      p.mb-0 Your Rating
+                      i.fas.fa-star.text-parsley
+                      i.fas.fa-star.text-parsley
+                      i.fas.fa-star.text-parsley
+                      i.fas.fa-star.text-parsley
+                      i.fas.fa-star.text-parsley
+
+                      form#contact-form(method='post' action='assets/php/contact.php')
+                        .mb-4.pb-2
+                          textarea#form_message.form-control.footer-input.ps-px-15.border-dim-grey( name='message', placeholder='Your Review', rows='5', required)
+                        .mb-4 
+                          a.btn.btn-parsley(href='#') Submit
+
+      .container.mt-px-lg-100.mt-px-md-80.mt-px-60.mb-5
+        h2.text-center Related Products
+      .container.mb-px-lg-120.mb-px-md-20.mb-px-60
+        +shop(
+            'card-post-style',
+            'col-lg-4 mb-lg-0 mb-px-md-50 mb-px-40',
+            false,
+            {
+            image:'assets/images/shop/s1.jpg',
+            alt:'s1 image',
+            title:'Taco with meat and vegetables',
+            price:'15.99'
+            },
+            {
+            image:'assets/images/shop/s2.jpg',
+            alt:'s2 image',
+            title:'Sala dwith Grilled squids ',
+            price:'20.99'
+            },
+            {
+            image:'assets/images/shop/s3.jpg',
+            alt:'s3 image',
+            title:'Chicken burrito',
+            price:'21.99'
+            }
+            )          
+
+      include includes/icons-nevigation

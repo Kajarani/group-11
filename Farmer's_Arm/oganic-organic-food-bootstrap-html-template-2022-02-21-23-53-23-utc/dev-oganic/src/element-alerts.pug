@@ -1,0 +1,81 @@
+extends includes/layout
+include includes/mixin
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Alerts",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .alert.alert-primery.rounded-0.border-0(role='alert')
+              | A simple primary alert with 
+              a.alert-link(href='#') an example link
+              | . Give it a click
+              |                         if you like.
+            .alert.alert-danger.rounded-0.border-0(role='alert')
+              | A simple danger alert with 
+              a.alert-link(href='#') an example link
+              | . Give it a click if you like.
+            
+            .alert.alert-secondary.rounded-0.border-0(role='alert')
+              | A simple secondary alert with 
+              a.alert-link(href='#') an example link
+              | . Give it a
+              |                         click if you like.
+            .alert.alert-success.rounded-0.border-0(role='alert')
+              | A simple success alert with 
+              a.alert-link(href='#') an example link
+              | . Give it a click
+              |                         if you like.
+            .alert.alert-warning.rounded-0.border-0.alert-dismissible.fade.show(role='alert')
+              strong Holy guacamole!
+              |  You should check in on some of those fields below.
+              button.close.border-0.btn.btn-yellow(type='button', data-dismiss='alert', aria-label='Close')
+                span(aria-hidden='true') ×
+            .alert.alert-warning.rounded-0.border-0(role='alert')
+              | A simple warning alert with 
+              a.alert-link(href='#') an example link
+              | . Give it a click
+              |                         if you like.
+            .alert.alert-info.rounded-0.border-0.alert-dismissible.fade.show(role='alert')
+              strong Holy guacamole!
+              |  You should check in on some of those fields below.
+              button.close.border-0.btn.btn-blue(type='button', data-dismiss='alert', aria-label='Close')
+                span(aria-hidden='true') ×
+            .alert.alert-light.rounded-0.border-0(role='alert')
+              | A simple light alert with 
+              a.alert-link.border-0(href='#') an example link
+              | . Give it a click if
+              |                         you like.
+            .alert.alert-dark.rounded-0.border-0(role='alert')
+              | A simple dark alert with 
+              a.alert-link.border-0(href='#') an example link
+              | . Give it a click if
+              |                         you like.
+
+            .alert.alert-success.rounded-0.border-0(role='alert')
+              h4.alert-heading Well done!
+              p
+                | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+              hr
+              p.mb-0
+                | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+
+      include includes/icons-nevigation

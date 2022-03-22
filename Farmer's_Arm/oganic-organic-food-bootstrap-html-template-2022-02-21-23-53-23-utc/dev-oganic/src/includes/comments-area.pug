@@ -1,0 +1,22 @@
+// Comments Area
+.comments.comments-area.container-small.mt-4(id="comments")
+      
+  #respond.comment-respond
+    h3#reply-title.comment-reply-title.mt-3.mb-lg-5.text-parsley Leave a Reply
+    form#commentform.comment-form(action='#', method='post', novalidate='')
+      p.comment-form-comment.form-group.mb-px-40
+        textarea#comment.form-control(name='comment', cols='45', rows='7', required='required' placeholder='Message')
+
+      p.comment-form-author.form-group.mb-px-40
+        input#author.form-control(name='author', type='text', value='', size='30', maxlength='245', required='required' placeholder='Name')
+
+      p.comment-form-email.form-group.mb-px-40
+        input#email.form-control(name='email', type='email', value='', size='30', maxlength='100',  aria-describedby='email-notes', required='required' placeholder='Email')
+
+      p.comment-form-url.form-group.mb-px-40
+        input#url.form-control(type='url', name='url', size='30', maxlength='200', value='' placeholder='Website')
+
+      p.form-submit
+        a.btn.btn-parsley(href='#') Submit
+  // #respond
+// End Comments Area

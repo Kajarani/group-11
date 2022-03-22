@@ -1,0 +1,140 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+    .entry-content
+      //Main Hero Container
+      .small-bg-about-us
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"About us", 
+              title:"We are farmers",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/about-us/a1.jpg",
+              alt:"about-us-hero-image"
+            })
+
+      .container.mt-lg-9.mt-md-7.mt-4
+        .row.gx-lg-5
+          .col-lg-6.mb-lg-0.mb-md-5.mb-4
+            .position-relative
+              img.z-index-back(src="assets/images/about-us/a2.jpg", alt="about-us-2").height-px-750.w-100.object-fit-cover
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-lg-5.start-px-n-lg-44
+
+          .col-lg-6.mt-lg-auto
+            .ms-px-lg-52
+              h5.font-letter-space.mb-px-6 History
+              h4.mb-px-md-20.mb-3 1995 Beginning of Male
+              p.mt-n1.mb-px-28 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida magna ut diam varius, vitae mattis neque tempus. Maecenas id tortor ac augue commodo rutrum. Sed in tempor urna. Aenean porttitor velit neque, vel efficitur nulla vehicula eget.
+              |  Mauris finibus magna ut urna euismod viverra. Praesent eu mi volutpat, consectetur mi sit amet, varius mi. Curabitur ligula ut massa ullamcorper dictum. Donec et justo semper, rutrum libero a, lobortis odio.
+              .row.gx-lg-3.mt-px-md-62.mt-px-40
+                .col-lg-6.mb-lg-0.mb-md-5.mb-4
+                  img(src="assets/images/about-us/a3.jpg", alt="about-us-2").height-px-382.w-100.object-fit-cover
+                .col-lg-6
+                  img(src="assets/images/about-us/a4.jpg", alt="about-us-3").height-px-382.w-100.object-fit-cover
+      
+      // logos
+      .container.mt-px-lg-150.mb-px-lg-150.mt-px-md-80.mb-px-md-80.mt-px-60.mb-px-60
+        .row.gx-lg-5.pt-px-lg-15.pb-px-lg-29
+          .col-lg-4.mb-lg-0.mb-px-md-40.mb-px-30
+            .text-center
+              img.mb-px-27(src="assets/images/logo7.png", alt="logo4")
+              h5.mb-px-18 Farm raised food
+              .px-2
+                p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+          .col-lg-4.mb-lg-0.mb-px-md-40.mb-px-30              
+            .text-center
+              img.mb-px-27(src="assets/images/logo8.png", alt="logo4")
+              h5.mb-px-18 100% organic food
+              .px-2
+                p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+          .col-lg-4
+            .text-center
+              img.mb-px-27(src="assets/images/logo9.png", alt="logo4")
+              h5.mb-px-18 Grown naturally
+              .px-2
+                p.mb-0 Pellentesque habitant tristique senectus et netus et malesuada ac turpis egestas. Suspendisse vel orci quis metus aliquam porta a eu dui. Integer tempor enim non nibh convallis maximus. 
+
+      // content image
+      .container-fluid
+        .row.gx-lg-3
+          .col-lg-4
+            img.mb-lg-0.mb-md-5.mb-4(src="assets/images/about-us/a5.jpg", alt="about-us-5").height-px-614.w-100.object-fit-cover
+          .col-lg-4
+            img.mb-lg-0.mb-md-5.mb-4(src="assets/images/about-us/a6.jpg", alt="about-us-6").height-px-614.w-100.object-fit-cover
+          .col-lg-4
+            img(src="assets/images/about-us/a7.jpg", alt="about-us-7").height-px-614.w-100.object-fit-cover
+      
+      // merg iamge section
+      .mt-px-lg-120.mb-px-lg-120.mt-px-md-80.mb-px-md-70.mt-px-20.mb-px-50
+        .container.pb-px-lg-66
+          .row.gx-lg-5
+            .col-lg-6.order-lg-1
+              .ms-px-lg-32
+                .position-relative
+                  .ms-px-lg-151.me-lg-0.me-px-md-150
+                    .ps-px-lg-30.pe-lg-0.pe-px-md-70
+                      img.mb-md-0.mb-px-20(src="assets/images/about-us/a8.jpg", alt="about-us image-8").height-px-550.object-fit-cover.w-100
+                      img.z-index-flower.d-md-block.d-none(src="assets/images/flowers/f8.png", alt="f8 flower image").position-absolute.top-px-n-lg-0.end-px-n-lg-44.top-px-n-md-15.end-px-n-md-10
+                  .position-md-absolute.top-0.end-0
+                    .me-px-lg-101.ms-px-md-150.ms-lg-0.mt-px-lg-150.mt-px-md-120
+                      .pe-px-lg-85.ps-lg-0.ps-px-md-70.pt-px-lg-70
+                        img(src="assets/images/about-us/a9.jpg", alt="about-us image-9").height-px-460.object-fit-cover.w-100
+            .col-lg-6.my-auto
+              .position-relative
+                .mt-px-lg-84.mt-px-md-150.mt-px-30
+                  h5.font-letter-space.mb-px-8 Go Organic
+                  h2.mb-px-17 It’s always better when it’s natural.
+                  .pe-px-lg-90.pb-px-6
+                    p Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                  .row.mt-px-lg-30.mt-px-20
+                    .col-md-6.mb-md-0.mb-3
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                    .col-md-6
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                  .row.mt-px-lg-35.mt-px-20
+                    .col-md-6.mb-md-0.mb-3
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                    .col-md-6
+                      h6.mb-px-18 1. Eat good, Feel good
+                      p Lorem ipsum dolor amet, consectetur adipiscing. Cras maximus, dolor nec placerat scelerisque.
+                img.d-lg-block.d-none(src="assets/images/flowers/f9.png", alt="f9 flower image").position-absolute.top-px-40.start-px-n-77
+
+      .container
+        .row.gx-lg-5
+          .col-lg-6.mb-lg-0.mb-px-40
+            img(src="assets/images/about-us/a10.jpg", alt="about-us image-10").height-px-456.object-fit-cover.w-100
+          .col-lg-6.my-auto
+            .ms-px-lg-32
+              h5.font-letter-space.mb-px-8 Go Organic
+              h2.mb-px-17 It’s always better when it’s natural.
+              .pe-px-lg-90.pb-px-6
+                p Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.
+              a.btn.btn-parsley(href="page-about-us.html") Get started
+        
+      // last section Need a Expert
+      .container.mt-px-lg-120.mb-px-lg-120.mt-px-md-80.mb-px-md-80.mt-px-60.mb-px-60
+        .row.gx-lg-5
+          .col-lg-5.order-lg-1
+            .position-relative
+              img(src="assets/images/home/h8.jpg", alt="image-h8").height-px-408.object-fit-cover.w-100
+              img.z-index-flower.d-lg-block.d-none(src="assets/images/flowers/f91.png", alt="f91 flower image").position-absolute.top-px-lg-5.end-px-n-28
+          .col-lg-7
+            .bg-texture-image.px-lg-7.pt-px-lg-80.pb-px-lg-81.px-md-5.pt-px-md-50.pb-px-md-51.px-4.pt-px-40.pb-px-41
+              h5.font-letter-space.mb-px-8 Need a expert advice?
+              h2.mb-px-17 Ask a Nutritionist Online
+              .pe-px-lg-0.pb-px-6
+                p Donec euismod posuere rhoncus. Donec vestibulum venenatis nunc, quis mollis lectus fermentum vel. Curabitur mollis dolor sapien, ut varius arcu ullamcorper vitae rci varius natoque penatibus magnis.
+              
+              a.btn.btn-parsley(href="page-about-us.html") Contact us
+
+      include includes/icons-nevigation

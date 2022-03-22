@@ -1,0 +1,109 @@
+extends includes/layout
+include includes/mixin
+block content
+  article.entry
+    .entry-content
+      //hero title
+      .small-bg-blog
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            { 
+              tag:"Read", 
+              title:"Blog",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/contact-us/c4.jpg",
+              alt:"blog-hero-image"
+            })
+
+      .container.mt-lg-8.mt-md-6.mt-5
+        +blog(
+          'card-post-style posts-bg-white',
+          'col-lg-4 mb-px-lg-0 mb-px-50 mb-px-40',
+          false,
+          {
+          image:'assets/images/blog/b1.jpg',
+          category:'Ingradiant',
+          alt:'b1 image',
+          title:'Naturally grown green pumpkin',  
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b2.jpg',
+          category:'Seeds',
+          alt:'b2 image',
+          title:'Fresh tomatoes harvesting',  
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b3.jpg',
+          category:'Corn',
+          alt:'b3 image',
+          title:'Fresh vegetables are important',
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b4.jpg',
+          category:'Natural',
+          alt:'b4 image',
+          title:'Peas soap with fried bread',  
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b5.jpg',
+          category:'Corn',
+          alt:'b5 image',
+          title:'Natural ingredient ‘s are important',  
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b6.jpg',
+          category:'Ingradiants',
+          alt:'b6 image',
+          title:'Vegetable Goods Good For Health',
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b7.jpg',
+          category:'Healthy Diet',
+          alt:'b7 image',
+          title:'Natural Meal are Important',
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b8.jpg',
+          category:'Salad',
+          alt:'b8 image',
+          title:'Ginger meal with oil Taste',  
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          },
+          {
+          image:'assets/images/blog/b9.jpg',
+          category:'Corn',
+          alt:'b9 image',
+          title:'Potato cutting are important',
+          content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum cras has been the industrys standard dummy text ever since the 1500s.'
+          }
+        )
+    .container.pb-lg-8.pb-md-6.pb-5.pt-6
+      .row
+        .col-lg-4.offset-4
+          .ms-lg-7
+            nav(aria-label='Page navigation example')
+              ul.list-group.list-unstyled.list-group-horizontal
+                li.list-group-item.rounded-circle.me-3
+                  a(href='#' aria-label='Previous')
+                    span(aria-hidden='true') <
+                li.active.list-group-item.rounded-circle.me-3
+                  a.text-white(href='#') 1
+                li.list-group-item.rounded-circle.me-3
+                  a(href='#') 2
+                li.list-group-item.rounded-circle.me-3
+                  a(href='#') 3
+                li.list-group-item.rounded-circle
+                  a(href='#' aria-label='Next')
+                    span(aria-hidden='true') >
+
+      include includes/icons-nevigation

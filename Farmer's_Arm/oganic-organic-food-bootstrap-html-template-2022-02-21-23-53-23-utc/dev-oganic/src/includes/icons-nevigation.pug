@@ -1,0 +1,81 @@
+// popup form
+#myOverlay.overlay
+    span.closebtn(onclick='closeSearch()' title='Close Overlay') &times;
+    .overlay-content
+        form(action='#')
+            input(type='text' placeholder='Search..' name='search')
+            button(type='submit')
+                i.fa.fa-search
+
+
+
+//check out cart
+#checkout-modal.modal.fade(tabindex='-1'  aria-hidden='true')
+    .container-fluid.mt-8
+        .row
+            .col-lg-6.offset-6
+                .modal-dialog.modal-xl
+                    .modal-content
+                        .modal-body 
+                            h3.text-center.mb-4.mt-3 Check Out Item
+                            table.table.mb-2.table-bordered.bg-white-smoke
+                                thead
+                                    tr.text-black.text-center.align-middle
+                                        th(scope='col') Product
+                                        th(scope='col') Price
+                                        th(scope='col') Quantity
+                                        th(scope='col') Discount
+                                        th(scope='col') Total
+                                tbody
+                                    tr.text-black.text-center.align-middle
+                                        td 
+                                            img(src="assets/images/shop/s3.jpg", alt="Shop3").height-px-50.object-fit-cover
+                                        td 350$
+                                        td 2
+                                        td 20$
+                                        td 330$
+                                    tr.text-black.text-center.align-middle
+                                        td 
+                                            img(src="assets/images/shop/s4.jpg", alt="Shop3").height-px-50.object-fit-cover
+                                        td 250$
+                                        td 3
+                                        td 15$
+                                        td 235$
+                                    tr.text-black.text-center.align-middle
+                                        td 
+                                            img(src="assets/images/shop/s5.jpg", alt="Shop3").height-px-50.object-fit-cover
+                                        td 150$
+                                        td 4
+                                        td 10$
+                                        td 140$  
+                                    tr.text-black.text-center.align-middle.text-center
+                                        td.font-weight-bold Grand Total
+                                        td(colspan='4').text-end.font-weight-bold 705$ 
+                        .modal-footer.border-0
+                            button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Add items
+                            button.btn.btn-primary(type='button' data-bs-dismiss='modal') Check Out
+
+
+// Subscription Form
+#user-login.modal.fade(tabindex='-1'  aria-hidden='true')
+    .container-fluid.mt-8
+        .row
+            .col-lg-4.offset-8
+                .modal-dialog
+                    .modal-content
+                        .modal-body
+                            .row
+                                .col-lg-11
+                                    h3.mb-4.mt-1 Subscription account For Hanan
+                                .col-lg-1.my-auto
+                                    .ms-n1
+                                        button.btn.btn-black.close.rounded-0.px-2.py-2(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                            span(aria-hidden='true') &times;
+                            form
+                                .form-group
+                                    input#user-name.form-control.input-border(type='text' placeholder='User name')
+                                .form-group.mt-4
+                                    input#Pasword-name.form-control.input-border(type='password' placeholder='********')
+                        .modal-footer.border-0
+                            button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Register
+                            button.btn.btn-black(type='button' data-bs-dismiss='modal') Login

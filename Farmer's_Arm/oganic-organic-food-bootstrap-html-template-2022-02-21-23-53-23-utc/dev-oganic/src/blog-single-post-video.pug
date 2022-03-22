@@ -1,0 +1,74 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //featured image
+      .bg-texture-image.pt-px-lg-119.pt-md-7.pt-6.overflow-hidden
+        .container.position-relative
+          img.d-lg-block.d-none(src="assets/images/flowers/f100.png", alt="f100 flower image").position-absolute.top-px-lg-5.start-px-n-lg-25
+          img.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-lg-30.end-px-n-lg-35
+          .row
+            .col-lg-6.offset-lg-3
+              .text-center
+                +entryMetaTop('Amjad Ali', '', 'sep 20,2020', '') 
+                h1.mb-0 Winter giam nonumy eirmod tempor invidunt etum ne
+            img.mt-px-lg-61.mt-px-md-64.mt-px-48(src="assets/images/about-us/a8.jpg", alt="a8 single post2").height-px-630.w-100.object-fit-cover
+
+      //Video
+      .container.mt-lg-8.mt-md-7.mt-5
+        .row.justify-content-lg-center
+          .col-lg-8
+            .entry-media
+              .embed-responsive.embed-responsive-16by9
+                iframe(src='https://player.vimeo.com/video/181445965?color=ffffff&title=0&byline=0&portrait=0' allowfullscreen='')
+
+
+      .container.mt-lg-8.mt-md-7.mt-5
+        .row.justify-content-lg-center
+          .col-lg-8
+            p.lead.mb-4 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.
+            div.pt-2
+              p Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et sadipscing  accusam et justo duo dolores rebum.
+            blockquote.mt-5
+              .border-start.border-grain-brown.border-3.ps-4
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+                cite.font-weight-bold.text-flame-pea  - Richard Thomas
+
+      .container.my-5
+        .row.gx-lg-5
+          .col-lg-6.mb-lg-0.mb-5
+            img(src="assets/images/single-project/sp1.jpg" alt="single-post1").height-px-853.w-100.object-fit-cover
+          .col-lg-6
+            img(src="assets/images/single-project/sp2.jpg" alt="single-post2").height-px-853.w-100.object-fit-cover
+
+      .container
+        .row.justify-content-lg-center
+          .col-lg-8
+            h4.mb-4 There are many variations of passages of Lorem Ipsum available
+            p Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et sadipscing  accusam et justo duo dolores rebum.
+        .mt-5
+          img(src="assets/images/single-project/sp3.jpg" alt="single-post3").height-px-730.w-100.object-fit-cover
+
+        .row.justify-content-lg-center.mt-5
+          .col-lg-8
+            p Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et sadipscing  accusam et justo duo dolores rebum.
+
+        .row.justify-content-lg-center.mt-5
+          .col-lg-8.pr-lg-10 
+            .py-3
+              i.fas.fa-tags.text-parsley
+              span.ms-2
+                a.h5.font-letter-space(href="#") Energy, 
+              span
+                a.h5.font-letter-space(href="") New
+        .row.justify-content-lg-center.mt-4
+          .col-lg-8
+            include includes/comments-area
+
+      include includes/icons-nevigation
+

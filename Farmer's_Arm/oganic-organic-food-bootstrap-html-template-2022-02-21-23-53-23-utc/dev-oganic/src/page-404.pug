@@ -1,0 +1,24 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      // head page 404
+      .bg-texture-image.py-lg-10.pt-md-9.pb-md-5.py-7.overflow-hidden
+        .container.my-lg-8.position-relative
+          img.d-lg-block.d-none(src="assets/images/flowers/f100.png", alt="f100 flower image").position-absolute.top-px-n-lg-35.start-px-n-lg-25
+          img.d-lg-block.d-none(src="assets/images/flowers/f11.png", alt="f11 flower image").position-absolute.top-px-lg-0.end-px-n-lg-35
+          .row 
+            .col-lg-4.offset-lg-1.my-auto.text-lg-start.text-center
+              h1.title-404.mb-lg-5.mb-4 404
+            .col-lg-6.text-lg-start.text-center
+              h5.font-letter-space.mb-px-5 oopS!
+              h2.mb-3 Page Not Found
+              .pe-lg-0.ps-lg-0.px-md-9
+                p.lead.mb-px-31 We’re sorry, the page you have looked for does not exist in our database! Maybe go to our home page or try to use a search?
+              
+              a.btn.btn-parsley(href='index.html') Go Back To Home
+                
+      include includes/icons-nevigation

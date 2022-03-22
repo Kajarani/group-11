@@ -1,0 +1,93 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //hero title
+      .small-bg-portfolio
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Our", 
+              title:"Portfolio three col",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/about-us/a8.jpg",
+              alt:"portfolio-three-col-hero-image"
+            })
+
+      .container.mt-px-lg-120.mt-px-md-80.mt-px-60.mb-px-lg-120.mb-px-md-80.mb-px-60
+        +portfolio-three-col(
+          'card-post-style',
+          'col-lg-4 mb-px-lg-0 mb-px-md-50 mb-px-40',
+          true,
+          {
+            image:"assets/images/portfolio/pf1.jpg",
+            alt:'pf1 image',
+            category:"Farming",
+            title:"Green salad with berries",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf2.jpg",
+            alt:'pf2 image',
+            category:"Farming",
+            title:"Ketogenic diet dinner",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf3.jpg",
+            alt:'pf3 image',
+            category:"Farming",
+            title:"Grilled zucchini salad",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf4.jpg",
+            alt:'pf4 image',
+            category:"Farming",
+            title:"Quinoa salad with kale",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf5.jpg",
+            alt:'pf5 image',
+            category:"Farming",
+            title:"Vegetarian sandwiches",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf6.jpg",
+            alt:'pf6 image',
+            category:"Farming",
+            title:"Classic Caesar salad",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf7.jpg",
+            alt:'pf7 image',
+            category:"Farming",
+            title:"Classic Caesar salad",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf8.jpg",
+            alt:'pf8 image',
+            category:"Farming",
+            title:"Classic Caesar salad",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf9.jpg",
+            alt:'pf9 image',
+            category:"Farming",
+            title:"Classic Caesar salad",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          }
+          )
+        .mt-px-lg-80.mt-px-md-20.text-center
+          a.btn.btn-parsley(href="page-portfolio.html") View more
+      include includes/icons-nevigation

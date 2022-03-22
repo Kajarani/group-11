@@ -1,0 +1,101 @@
+extends includes/layout
+include includes/mixin
+block content
+  article.entry
+    .entry-content
+      //hero title
+      .small-bg-shop
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Our", 
+              title:"Shop",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/portfolio/pf1.jpg",
+              alt:"shop-hero-image"
+            })
+
+      .container.mt-lg-9.mt-md-7.mt-6
+          +shop(
+            'card-post-style',
+            'col-lg-4 mb-lg-0 mb-px-md-50 mb-px-40',
+            false,
+            {
+            image:'assets/images/shop/s1.jpg',
+            alt:'s1 image',
+            title:'Taco with meat and vegetables',
+            price:'15.99'
+            },
+            {
+            image:'assets/images/shop/s2.jpg',
+            alt:'s2 image',
+            title:'Sala dwith Grilled squids ',
+            price:'20.99'
+            },
+            {
+            image:'assets/images/shop/s3.jpg',
+            alt:'s3 image',
+            title:'Chicken burrito',
+            price:'21.99'
+            },
+            {
+            image:'assets/images/shop/s4.jpg',
+            alt:'s4 image',
+            title:'Baked salmon fish',
+            price:'15.99'
+            },
+            {
+            image:'assets/images/shop/s5.jpg',
+            alt:'s5 image',
+            title:'Organic Wrap',
+            price:'60.99'
+            },
+            {
+            image:'assets/images/shop/s6.jpg',
+            alt:'s6 image',
+            title:'Mexican black bean corn',
+            price:'10.99'
+            },
+            {
+            image:'assets/images/shop/s7.jpg',
+            alt:'s7 image',
+            title:'Oganic natural feeds',
+            price:'10.99'
+            },
+            {
+            image:'assets/images/shop/s8.jpg',
+            alt:'s8 image',
+            title:'Salad With Grilled Squids',
+            price:'10.99'
+            },
+            {
+            image:'assets/images/shop/s9.jpg',
+            alt:'s9 image',
+            title:'Taco with meat  and vegitable',
+            price:'10.99'
+            }
+            ) 
+
+      .container.pb-lg-8.pb-md-6.pb-5.pt-6
+        .row
+        .col-lg-4.offset-4
+          .ms-lg-7
+            nav(aria-label='Page navigation example')
+              ul.list-group.list-unstyled.list-group-horizontal
+                li.list-group-item.rounded-circle.me-3
+                  a(href='#' aria-label='Previous')
+                    span(aria-hidden='true') <
+                li.active.list-group-item.rounded-circle.me-3
+                  a.text-white(href='#') 1
+                li.list-group-item.rounded-circle.me-3
+                  a(href='#') 2
+                li.list-group-item.rounded-circle.me-3
+                  a(href='#') 3
+                li.list-group-item.rounded-circle
+                  a(href='#' aria-label='Next')
+                    span(aria-hidden='true') >      
+
+      include includes/icons-nevigation 

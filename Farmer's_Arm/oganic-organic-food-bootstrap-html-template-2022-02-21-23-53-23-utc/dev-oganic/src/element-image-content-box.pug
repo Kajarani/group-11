@@ -1,0 +1,59 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .small-bg-faq.mb-px-lg-100.mb-px-md-80.mb-px-60
+        .container
+          +hero-bg(
+            'card-post-style',
+            'col-lg-12',
+            false,
+            {
+              tag:"Ask us",
+              title:"Image Content Box",
+              content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum urna augue. Duis sit maximus commodo hendrerit lorem maximus mi.",
+              image:"assets/images/faq/fa1.jpg",
+              alt:"faq hero image"
+            })
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row.gx-5.mt-lg-5.mt-md-4.mt-3
+              .col-lg-6
+                img(src="assets/images/blog/b1.jpg" alt="b1 image")
+                h4.mt-4.mb-3.text-flame-pea Concept Design
+                p Aptent taciti sociosqu ad litora torquent per on ubia nos inceptos himenaeos. Pellentesqu eget scelerisque turpis. consequat enim.
+              .col-lg-6.mt-lg-0.mt-md-5.mt-4
+                img(src="assets/images/blog/b3.jpg" alt="b2 image")
+                h4.mt-4.mb-3.text-flame-pea Interior Architecture
+                p Aptent taciti sociosqu ad litora torquent per on ubia nos inceptos himenaeos. Pellentesqu eget scelerisque turpis. consequat enim.
+
+            hr.mt-5.mb-7
+
+            +portfolio-three-col(
+          'card-post-style',
+          'col-lg-6 mb-px-lg-0 mb-px-md-50 mb-px-40',
+          true,
+          {
+            image:"assets/images/portfolio/pf1.jpg",
+            alt:'pf1 image',
+            category:"Farming",
+            title:"Green salad with berries",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          },
+          {
+            image:"assets/images/portfolio/pf2.jpg",
+            alt:'pf2 image',
+            category:"Farming",
+            title:"Ketogenic diet dinner",
+            content:"Proin aliquet ut justo vehicula tempus. Praesent vehicula felis auctor lorem aliquet rhoncus."
+          }
+          )
+      include includes/icons-nevigation 

@@ -1,0 +1,219 @@
+// single post featured Image
+.featured-image-blog {
+    background-image: url("../images/blog/single-post.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(lg) {
+        min-height: 700px;
+    }
+}
+
+// texture background
+.bg-texture-image {
+    background-image: url("../images/home/bg-texture.png");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: repeat;
+    background-color: $wheatfield;
+}
+
+// background images
+.small-bg-about-us {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/about-us/a1.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+
+// faq bg image
+.small-bg-faq {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/faq/fa1.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// contant us bg image
+.small-bg-contact-us {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/contact-us/c6.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// team bg image
+.small-bg-team {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/team/t9.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// testimonials bg image
+.small-bg-testimonials {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/testimonials/tst1.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// partner bg image
+.small-bg-partner {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/partner/pr1.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// blog bg image
+.small-bg-blog {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/contact-us/c4.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// portfolio bg image
+.small-bg-portfolio {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/about-us/a8.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// shop bg image
+.small-bg-shop {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/portfolio/pf1.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// pricing table bg image
+.small-bg-pricing-table {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/portfolio/pf2.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
+
+// service bg image
+.small-bg-service {
+    background-color: $wheatfield;
+
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/home/bg-texture.png"), url("../images/services/sr1.jpg");
+        background-position: left top, right top;
+        background-size: 50%, 50%;
+        background-repeat: repeat, no-repeat;
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../images/home/bg-texture.png");
+        background-position: top left;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
