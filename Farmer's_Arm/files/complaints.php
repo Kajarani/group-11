@@ -1,3 +1,52 @@
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname="farmersarm";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password,$dbname);
+?>
+<?php
+
+$query="select * from complaint order by id desc limit 1";
+$result=mysqli_query($conn,$query);
+$row=mysqli_fetch_array($result);
+$last_id=$row['id'];
+if ($last_id == "")
+        {
+            $complaint_ID = "COM1";
+        }
+        else
+        {
+            $complaint_ID = substr($last_id, 3);
+            $complaint_ID = intval($complaint_ID);
+            $complaint_ID = "COM" . ($complaint_ID + 1);
+        }
+
+?>
+<?php
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $id = $_POST["id"];
+            $farname = $_POST["farname"];
+            $email = $_POST["email"];
+            $complaint= $_POST["complaint"];
+            if (!$conn)
+            {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+            $sql = "INSERT INTO complaint (id,farname,email,complaint)VALUES ('$id','$farname',' $email','  $complaint')";
+            if (mysqli_query($conn, $sql)) {
+                echo "Your complaint posted successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+            mysqli_close($conn);
+        }
+?>
+ 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,13 +111,15 @@
         <div class="container">
 			<div style="background-color:#edf3eb" class="jumbotron">
 				<h2>Make your complaints here!</h2><br />
-				<form  method="post" action="problems.php">
+				<form  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 					<p>Complaint_ID<br />
-					<input class="form-control" style="width:30%;" type="text"   value= >
+					<input class="form-control" style="width:30%;" type="text"   name="id" id="id" value="<?php echo $complaint_ID; ?>" readonly="" >
+                    <p>Name<br />
+                        <input class="form-control" type="text" placeholder="Enter your name" name="farname" id="farname" >
 					<p>Email-Id<br />
-					<input class="form-control" style="width:30%;" type="email" placeholder="Enter your email id" value=>
+					<input class="form-control" style="width:30%;" type="email" placeholder="Enter your email id" name="email" id="email">
 					<p>Complaint<br />
-					<textarea class="form-control" style="width:70%;" rows="5" placeholder="Enter your complaints here"></textarea><br />
+					<textarea class="form-control" style="width:70%;" rows="5" placeholder="Enter your complaints here" name="complaint" id="complaint"></textarea><br />
 					<button type="submit" class="btn btn-primary">Post</button>
                     <button type="reset" class="btn btn-primary">Cancel</button>
 
