@@ -4,7 +4,7 @@ include '../db.php';
 
 if(isset($_GET['id'])){
 
-  $qry = mysqli_query($con,"SELECT * FROM product where product_id = ".$_GET['id']);
+  $qry = mysqli_query($conn,"SELECT * FROM product where product_id = ".$_GET['id']);
   foreach(mysqli_fetch_array($qry) as $key => $val){
     $meta[$key] = $val;
   }
