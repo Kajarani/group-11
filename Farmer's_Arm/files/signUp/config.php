@@ -1,7 +1,7 @@
 <?php
 	session_start(); // start session
 	// connect to database
-	$conn = new mysqli("localhost", "root", "", "farmer'sarm");
+	$conn = new mysqli("localhost", "root", "", "farmersarm");
 	// Check connection
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
