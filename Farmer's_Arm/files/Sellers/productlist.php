@@ -112,11 +112,12 @@ include("../db.php");
 
                         while(list($product_id,$image,$product_name,$price)=mysqli_fetch_array($result))
                         {
-                        echo "<tr><td><img src='../product_images/$image' style='width:50px; height:50px;'></td><td>$product_name</td>
+                        echo "<tr><td><img src='../product_images/$image' style='width:50px; height:50px;'></td>
+                        <td>$product_name</td>
                         <td>$price</td>
                         <td class='text-center'>
                         <a class=' btn btn-primary btn-sm' href='index.php?page=addproduct&id=$product_id'>Edit</a>
-                        <a class=' btn btn-danger btn-sm' href='clothes_list.php?product_id=$product_id&action=delete'>Delete</a>
+                        <a class=' btn btn-danger btn-sm' href='electroniclist.php?product_id=$product_id&action=delete'>Delete</a>
                         </td></tr>";
                         }
 

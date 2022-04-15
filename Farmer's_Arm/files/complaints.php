@@ -37,12 +37,16 @@ if ($last_id == "")
             }
             $sql = "INSERT INTO complaint (id,farname,email,complaint)VALUES ('$id','$farname',' $email','  $complaint')";
             if (mysqli_query($conn, $sql)) {
-                echo "Your complaint posted successfully";
+           
+                header('location:complaints.php');   
+                
             } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
             }
             mysqli_close($conn);
         }
+        
+
 ?>
  
 
