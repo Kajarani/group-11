@@ -1,3 +1,17 @@
+<?php 
+include '../db.php';
+?>
+<?php
+
+
+if(isset($_POST['but_submit'])){
+    $email=$_POST['email'];
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    $address=$_POST['address'];
+    
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,34 +36,38 @@
 				<img src="images/bascket.jpg" alt="">
 			</div>
 			<div class="form-inner">
-				<form action="">
+				<form action="registration.php" method="post">
 					<div class="form-header">
 						<h3>Sign up</h3>
 						<img src="images/sign-up.png" alt="" class="sign-up-icon">
 					</div>
 					<div class="form-group">
-						<label for="">Username:</label>
-						<input type="text" class="form-control" data-validation="length alphanumeric" data-validation-length="3-12">
+						<label >Username:</label>
+						<input type="text" name="username" class="form-control" data-validation="length alphanumeric" data-validation-length="3-12">
 					</div>
 					<div class="form-group">
-						<label for="">E-mail:</label>
-						<input type="text" class="form-control" data-validation="email">
+						<label >E-mail:</label>
+						<input type="text" name="email" class="form-control" data-validation="email">
 					</div>
 					<div class="form-group" >
-						<label for="">Password:</label>
-						<input type="password" class="form-control" data-validation="length" data-validation-length="min8">
+						<label >Password:</label>
+						<input type="password" name="password" class="form-control" data-validation="length" data-validation-length="min8">
+					</div>
+                    <div class="form-group">
+						<label >Address:</label>
+						<input type="text" name="address" class="form-control" data-validation="length alphanumeric" data-validation-length="100">
 					</div>
 
 					<div class="dropdown">
-						<label for="cars">Select Type:</label>
-						<select name="cars" id="cars">
+						<label >Select User Type:</label>
+						<select name="role_id" id="role_id">
 						  <option value="volvo">Farmer</option>
 						  <option value="saab">Seller</option>
 						  
 						</select>
 					</div>
 
-					<button>create my account</button>
+					<button class="login100-form-btn"  value="Submit" name="but_submit" id="but_submit">create my account</button>
 					<div class="socials">
 						<p>Sign up with social platforms</p>
 						<a href="" class="socials-icon">
