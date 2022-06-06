@@ -3,15 +3,15 @@
             <div class="site-footer_farm_image"><img src="assets/images/resources/site-footer-farm.png"
                     alt="Farm Image"></div>
             <div class="container">
-                <div class="row no-gutters">
+                <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="footer-widget__column footer-widget__about wow fadeInUp" data-wow-delay="100ms">
+                        <div class="footer-widget__column wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__title">
                                 <h3>About</h3>
                             </div>
                             <div class="footer-widget_about_text">
-                                <p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla placerat posuere dui. Pellentesque
-                                    venenatis sem non lacus ac auctor.</p>
+                                <p>We Strive to Develop Better Fertilizer and Production Technologies to Smallholder Farmers. 
+                                 Increasing Farm Productivity, Profitability, and Sustainability.</p>
                             </div>
                             <form>
                                 <div class="footer_input-box">
@@ -22,60 +22,58 @@
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-6">
-                        <div class="footer-widget__column footer-widget__link wow fadeInUp" data-wow-delay="200ms">
+                        <div class="footer-widget__column margin_left_30 wow fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget__title">
                                 <h3>Explore</h3>
                             </div>
                             <ul class="footer-widget__links-list list-unstyled">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="service.html">Services</a></li>
-                                <li><a href="projects.html">Our Projects</a></li>
-                                <li><a href="farmers.html">Meet the Farmers</a></li>
-                                <li><a href="news.html">Latest News</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/blog.html">Blogs</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="footer-widget__column footer-widget__news wow fadeInUp" data-wow-delay="300ms">
+                        <div class="footer-widget__column wow fadeInUp" data-wow-delay="300ms">
                             <div class="footer-widget__title">
                                 <h3>News</h3>
                             </div>
                             <ul class="footer-widget__news list-unstyled">
                                 <li>
                                     <div class="footer-widget__news_image">
-                                        <img src="assets/images/resources/footer-1-img-1.jpg" alt="">
+                                        <img src="assets/images/blog/b1.jpg" alt="" height="50" width="50">
                                     </div>
                                     <div class="footer-widget__news_text">
-                                        <p><a href="news_detail.html"> Learn 10 Best Tips for New Formers</a></p>
+                                        <p><a href="file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/Tec.html"> Technology in Modern Farming</a></p>
                                     </div>
                                     <div class="footer-widget__news_date_box">
-                                        <p>30 Oct, 2019</p>
+                                        <p>04 June, 2022</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="footer-widget__news_image">
-                                        <img src="assets/images/resources/footer-1-img-2.jpg" alt="">
+                                        <img src="assets/images/blog/b2.jpg" alt="" height="50" width="50">
                                     </div>
                                     <div class="footer-widget__news_text">
-                                        <p><a href="news_detail.html">Farmer Sentiment Darkens Hopes Fade</a></p>
+                                        <p><a href="file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/Farmer.html">Farmers' role in a farm</a></p>
                                     </div>
                                     <div class="footer-widget__news_date_box">
-                                        <p>30 Oct, 2019</p>
+                                        <p>04 June, 2022</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="footer-widget__column footer-widget__contact wow fadeInUp" data-wow-delay="400ms">
+                        <div class="footer-widget__column wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__title">
                                 <h3>Contact</h3>
                             </div>
                             <div class="footer-widget_contact">
-                                <p>66 Broklyn Street, New Town<br>DC 5752, New Yrok</p>
-                                <a href="mailto:needhelp@agrikol.com">needhelp@agrikol.com</a><br>
-                                <a href="tel:666-888-0000">666 888 0000</a>
+                                <p>Farmers' Arm,<br>Belihuloya ,Sri Lanka</p>
+                                <a href="mailto:needhelp@agrikol.com">needhelp@Farmers'Arm.com</a><br>
+                                <a href="tel:666-888-0000">091-1234567</a>
                                 <div class="site-footer__social">
                                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -88,7 +86,6 @@
                 </div>
             </div>
         </footer>
-
         <div class="site-footer_bottom">
             <div class="container">
                 <div class="site-footer_bottom_copyright">

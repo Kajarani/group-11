@@ -1,10 +1,13 @@
 <html>
+    <head>
 <?php include 'header.php' ?>
-    <body>Welcome to Admin page
+</head>
+    <body>
+    
+    
 
-
-
-    </body>
-    <?php
+<?php
 include("footer1.php");?>
+    </body>
+    
 </html>

@@ -1,17 +1,5 @@
-<?php 
-include '../db.php';
-?>
-<?php
 
 
-if(isset($_POST['but_submit'])){
-    $email=$_POST['email'];
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-    $address=$_POST['address'];
-    
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -36,38 +24,38 @@ if(isset($_POST['but_submit'])){
 				<img src="images/bascket.jpg" alt="">
 			</div>
 			<div class="form-inner">
-				<form action="registration.php" method="post">
+				<form action="registration.php">
 					<div class="form-header">
 						<h3>Sign up</h3>
 						<img src="images/sign-up.png" alt="" class="sign-up-icon">
 					</div>
 					<div class="form-group">
-						<label >Username:</label>
-						<input type="text" name="username" class="form-control" data-validation="length alphanumeric" data-validation-length="3-12">
+						<label for="">Username:</label>
+						<input type="text" class="form-control" data-validation="length alphanumeric" data-validation-length="3-12">
 					</div>
 					<div class="form-group">
-						<label >E-mail:</label>
-						<input type="text" name="email" class="form-control" data-validation="email">
+						<label for="">E-mail:</label>
+						<input type="text" class="form-control" data-validation="email">
+					</div>
+					<div class="form-group">
+						<label >Address:</label>
+						<input type="text" name="address" class="form-control" >
 					</div>
 					<div class="form-group" >
-						<label >Password:</label>
-						<input type="password" name="password" class="form-control" data-validation="length" data-validation-length="min8">
-					</div>
-                    <div class="form-group">
-						<label >Address:</label>
-						<input type="text" name="address" class="form-control" data-validation="length alphanumeric" data-validation-length="100">
+						<label for="">Password:</label>
+						<input type="password" class="form-control" data-validation="length" data-validation-length="min8">
 					</div>
 
 					<div class="dropdown">
-						<label >Select User Type:</label>
-						<select name="role_id" id="role_id">
+						<label for="cars">Select Type:</label>
+						<select name="cars" id="cars">
 						  <option value="volvo">Farmer</option>
 						  <option value="saab">Seller</option>
-						  
+						  <option value="opel">Admin</option>
 						</select>
 					</div>
 
-					<button class="login100-form-btn"  value="Submit" name="but_submit" id="but_submit">create my account</button>
+					<button>create my account</button>
 					<div class="socials">
 						<p>Sign up with social platforms</p>
 						<a href="" class="socials-icon">
@@ -93,3 +81,33 @@ if(isset($_POST['but_submit'])){
 		<script src="js/main.js"></script>
 	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
+<?php
+    $email=$_POST['email'];
+    $username=$_POST['username'];
+	$password=$_POST['password'];
+ 	$address=$_POST['address'];
+    
+	 $servername = "localhost";
+	 $username = "root";
+	 $password = "";
+	 $dbname="farmersarm";
+	 // Create connection
+	 $conn = mysqli_connect($servername, $username, $password,$dbname);
+	 // Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}else{
+	$stmt=$conn->prepare(
+		"insert into users(email,username,password,address) values(?,?,?,?)"
+	);
+	$stmt->bind_param(
+		"ssss",
+		$email,
+		$username,
+		$password,
+		$address
+	);
+	$stmt->execute();
+	echo 'connect successfully';
+}
+?>

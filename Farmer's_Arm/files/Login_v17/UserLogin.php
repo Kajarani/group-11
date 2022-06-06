@@ -12,23 +12,17 @@ if (!$conn) {
 
 ?>
 <?php
-
-
 if(isset($_POST['but_submit'])){
 
     $uname = mysqli_real_escape_string($conn,$_POST['username']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
-
     if ($uname != "" && $password != ""){
-
         $sql_query = "select count(*) as cntUser from user where username='".$uname."' and password='".$password."'";
         $result = mysqli_query($conn,$sql_query);
         $row = mysqli_fetch_array($result);
-
         $count = $row['cntUser'];
 
         if($count > 0){
-            
             $_SESSION['uname'] = $uname;
             $sql="select role_id from user where username='".$uname."' and password='".$password."'";
             $result1= mysqli_query($conn,$sql);
@@ -38,15 +32,13 @@ if(isset($_POST['but_submit'])){
                 case "1":
                     echo "<script>
             alert('You are successfully login as Admin');
-            window.location.href='../Admin/adminhome.php';
+            window.location.href='../adminhome.html';
             </script>";
-                   
                     break;
                     case "2":
-    
                         echo "<script>
             alert('You are successfully login as Farmer');
-            window.location.href='../index.html';
+            window.location.href='file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/index.html';
             </script>";
                         break;
                         case "3":
@@ -152,9 +144,12 @@ if(isset($_POST['but_submit'])){
 							User name / password?
 						</a>
 					</div>
-
+					
+						
+						
+				
 					<div class="w-full text-center">
-						<a href="../signUp/index.html" class="txt3">
+						<a href="http://localhost/group-11/Farmer's_Arm/files/signUp/registration.php" class="txt3">
 							Sign Up
 						</a>
 					</div>
