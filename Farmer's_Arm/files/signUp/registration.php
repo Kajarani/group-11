@@ -1,4 +1,46 @@
+ 
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname="farmersarm";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password,$dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
 
+<?php
+ $conn = mysqli_connect($servername, $username, $password, $dbname);
+ if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+	
+	$username=$_POST['username'];
+	$email=$_POST['email'];
+	$address=$_POST['address'];
+	$password=$_POST['password'];
+	$role_id=$_POST['txt_role'];
+
+	if (!$conn)
+            {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+            $sql="INSERT INTO user (email,username,password,address,role_id)VALUES('$email','$username',$password','$address',$role_id)";
+            if (mysqli_query($conn, $sql)) {
+           
+				header("location:http://localhost/group-11/Farmer's_Arm/files/Login_v17/UserLogin.php");      
+                
+            } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+            mysqli_close($conn);
+	
+	
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -24,18 +66,21 @@
 				<img src="images/bascket.jpg" alt="">
 			</div>
 			<div class="form-inner">
-				<form action="registration.php">
-					<div class="form-header">
+			
+			<form  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+			<div class="form-header">
 						<h3>Sign up</h3>
 						<img src="images/sign-up.png" alt="" class="sign-up-icon">
 					</div>
+			
+					
 					<div class="form-group">
 						<label for="">Username:</label>
-						<input type="text" class="form-control" data-validation="length alphanumeric" data-validation-length="3-12">
+						<input type="text" name="username" class="form-control" data-validation="length alphanumeric" data-validation-length="3-12">
 					</div>
 					<div class="form-group">
 						<label for="">E-mail:</label>
-						<input type="text" class="form-control" data-validation="email">
+						<input type="text" name="email" class="form-control" data-validation="email">
 					</div>
 					<div class="form-group">
 						<label >Address:</label>
@@ -43,34 +88,22 @@
 					</div>
 					<div class="form-group" >
 						<label for="">Password:</label>
-						<input type="password" class="form-control" data-validation="length" data-validation-length="min8">
+						<input  name="password" type="password" class="form-control" data-validation="length" data-validation-length="min8">
 					</div>
 
 					<div class="dropdown">
 						<label for="cars">Select Type:</label>
-						<select name="cars" id="cars">
+						<select name="txt_role" id="cars">
+						<option value="" selected="selected"> -select role- </option>
 						  <option value="volvo">Farmer</option>
 						  <option value="saab">Seller</option>
-						  <option value="opel">Admin</option>
+						  
 						</select>
 					</div>
-
-					<button>create my account</button>
-					<div class="socials">
-						<p>Sign up with social platforms</p>
-						<a href="" class="socials-icon">
-							<i class="zmdi zmdi-facebook"></i>
-						</a>
-						<a href="" class="socials-icon">
-							<i class="zmdi zmdi-instagram"></i>
-						</a>
-						<a href="" class="socials-icon">
-							<i class="zmdi zmdi-twitter"></i>
-						</a>
-						<a href="" class="socials-icon">
-							<i class="zmdi zmdi-tumblr"></i>
-						</a>
-					</div>
+<div class="form-group"  align="center">
+					<input type="submit" name="btn_register" value="Register">
+</div>
+					
 				</form>
 			</div>
 			
@@ -81,33 +114,3 @@
 		<script src="js/main.js"></script>
 	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
-<?php
-    $email=$_POST['email'];
-    $username=$_POST['username'];
-	$password=$_POST['password'];
- 	$address=$_POST['address'];
-    
-	 $servername = "localhost";
-	 $username = "root";
-	 $password = "";
-	 $dbname="farmersarm";
-	 // Create connection
-	 $conn = mysqli_connect($servername, $username, $password,$dbname);
-	 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}else{
-	$stmt=$conn->prepare(
-		"insert into users(email,username,password,address) values(?,?,?,?)"
-	);
-	$stmt->bind_param(
-		"ssss",
-		$email,
-		$username,
-		$password,
-		$address
-	);
-	$stmt->execute();
-	echo 'connect successfully';
-}
-?>

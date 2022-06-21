@@ -12,6 +12,7 @@ if (!$conn) {
 
 ?>
 <?php
+session_start();
 if(isset($_POST['but_submit'])){
 
     $uname = mysqli_real_escape_string($conn,$_POST['username']);
@@ -38,7 +39,7 @@ if(isset($_POST['but_submit'])){
                     case "2":
                         echo "<script>
             alert('You are successfully login as Farmer');
-            window.location.href='file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/index.html';
+            window.location.href='../oganic/index.html';
             </script>";
                         break;
                         case "3":

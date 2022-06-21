@@ -48,29 +48,21 @@ if(isset($_GET['id'])){
                 </a>
             </div>
             <div class="main-nav__main-navigation">
-                <ul class=" main-nav__navigation-box">
-                <li class="dropdown current">
-                                <a href="index.php">Products</a>
-                                <ul>
-                                    <li><a href="index.php">Products List</a></li>
-                                    <li><a href="addproduct.php">Add Product</a></li>
-                                </ul><!-- /.sub-menu -->
-                            </li>
-                    <li class="dropdown ">
-                        <a href="Agri_Tips.html">Orders</a>
-                        
-                    </li>
-                    
-                   
-                  
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Log out</a>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
+                        <ul class=" main-nav__navigation-box">
+                        <li class="dropdown current">
+                                    <a href="index.php">Home</a>
+                                   <!-- /.sub-menu -->
+                                </li>
+                                <li class="dropdown ">
+                                    <a href="ViewOrders.php">View Orders</a>
+                                   <!-- /.sub-menu -->
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://localhost/group-11/Farmer's_Arm/files/logout.php">Log Out</a>
+                                   <!-- /.sub-menu -->
+                                </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
 
             <div class="main-nav__right">
                 <div class="icon_cart_box">
@@ -190,12 +182,107 @@ if(isset($_GET['id'])){
           
         </div>
       </div></p>
-      <?php
-include("footer1.php");
-
-
-
-?>
+      <footer class="site-footer">
+            <div class="site-footer_farm_image"><img src="assets/images/resources/site-footer-farm.png"
+                    alt="Farm Image"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-widget__column wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__title">
+                                <h3>About</h3>
+                            </div>
+                            <div class="footer-widget_about_text">
+                                <p>We Strive to Develop Better Fertilizer and Production Technologies to Smallholder Farmers. 
+                                 Increasing Farm Productivity, Profitability, and Sustainability.</p>
+                            </div>
+                            <form>
+                                <div class="footer_input-box">
+                                    <input type="Email" placeholder="Email Address">
+                                    <button type="submit" class="button"><i class="fa fa-check"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget__column margin_left_30 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__title">
+                                <h3>Explore</h3>
+                            </div>
+                            <ul class="footer-widget__links-list list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/blog.html">Blogs</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget__column wow fadeInUp" data-wow-delay="300ms">
+                            <div class="footer-widget__title">
+                                <h3>News</h3>
+                            </div>
+                            <ul class="footer-widget__news list-unstyled">
+                                <li>
+                                    <div class="footer-widget__news_image">
+                                        <img src="assets/images/blog/b1.jpg" alt="" height="50" width="50">
+                                    </div>
+                                    <div class="footer-widget__news_text">
+                                        <p><a href="file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/Tec.html"> Technology in Modern Farming</a></p>
+                                    </div>
+                                    <div class="footer-widget__news_date_box">
+                                        <p>04 June, 2022</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footer-widget__news_image">
+                                        <img src="assets/images/blog/b2.jpg" alt="" height="50" width="50">
+                                    </div>
+                                    <div class="footer-widget__news_text">
+                                        <p><a href="file:///C:/xampp/htdocs/group-11/Farmer's_Arm/oganic-organic-food-bootstrap-html-template-2022-02-21-23-53-23-utc/oganic/Farmer.html">Farmers' role in a farm</a></p>
+                                    </div>
+                                    <div class="footer-widget__news_date_box">
+                                        <p>04 June, 2022</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget__column wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__title">
+                                <h3>Contact</h3>
+                            </div>
+                            <div class="footer-widget_contact">
+                                <p>Farmers' Arm,<br>Belihuloya ,Sri Lanka</p>
+                                <a href="mailto:needhelp@agrikol.com">needhelp@Farmers'Arm.com</a><br>
+                                <a href="tel:666-888-0000">091-1234567</a>
+                                <div class="site-footer__social">
+                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="site-footer_bottom">
+            <div class="container">
+                <div class="site-footer_bottom_copyright">
+                    <p>@ All copyright 2020, <a href="#">farmers</a></p>
+                </div>
+                <div class="site-footer_bottom_menu">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                          </body>
      <script>
        $('.select2').select2({
         placeholder:"Please select Here",
